@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import Journey from "@/components/Journey";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Blog from "@/components/Blog";
+import CommunityServices from "@/components/CommunityServices";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
       <Journey />
       <Skills />
       <Projects />
+      <Blog />
+      <CommunityServices />
       <Contact />
       
       {/* Footer */}
