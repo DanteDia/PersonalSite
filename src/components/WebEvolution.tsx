@@ -33,29 +33,29 @@ export default function WebEvolution() {
 
   const eras: Era[] = [
     {
-      version: "Web 1.0",
-      label: "Read",
-      capabilities: ["Static pages", "Information consumption", "HTML/CSS"],
-      year: "1991–2004",
+      version: "2018–2021",
+      label: "BI Analyst @ BAFA",
+      capabilities: ["Web 2.0 Automation", "Cloud Migration", "BigQuery", "Looker"],
+      year: "The Foundations",
     },
     {
-      version: "Web 2.0",
-      label: "Read · Write",
-      capabilities: ["User-generated content", "Social media", "AJAX", "APIs"],
-      year: "2004–2014",
+      version: "2021–2023",
+      label: "Project Manager @ Oxygen Token",
+      capabilities: ["Web 3.0 Integration", "DeFi Protocols", "Carbon Credits", "Tokenization"],
+      year: "The Frontier",
     },
     {
-      version: "Web 3.0",
-      label: "Read · Write · Own",
-      capabilities: ["Blockchain", "Decentralization", "Token economics", "Smart contracts"],
-      year: "2014–2024",
-    },
-    {
-      version: "Web 4.0",
-      label: "Read · Write · Own · Transact",
-      capabilities: ["AI Sovereign", "Agent orchestration", "Autonomous transactions", "Human-AI collaboration"],
-      year: "2024–Present",
+      version: "2024–Present",
+      label: "BI Analyst @ BIND",
+      capabilities: ["Real-Time ETL", "AI-Driven Automation", "Executive Dashboards", "Enterprise Scale"],
+      year: "The Enterprise",
       active: true,
+    },
+     {
+      version: "Future",
+      label: "AI Sovereign Ecosystems",
+      capabilities: ["Web 4.0 Vision", "Autonomous Agents", "On-Chain Value", "Human-AI Collaboration"],
+      year: "The Singularity",
     },
   ];
 

@@ -32,7 +32,7 @@ export default function DataGraphs() {
             marginBottom: "2.5rem",
             textAlign: "center",
             color: "#1C1C1C",
-            fontWeight: 500,
+            fontWeight: 800,
           }}
         >
           Data &amp; Metrics
@@ -159,6 +159,39 @@ export default function DataGraphs() {
                 letterSpacing: "0.05em",
               }}
             >
+              Hours Saved by Automation
+            </span>
+            <div
+              style={{
+                fontSize: "2.5rem",
+                fontWeight: 600,
+                color: "#10B981",
+                marginTop: "0.5rem",
+              }}
+            >
+              4,500+
+            </div>
+          </div>
+          
+          <div
+            style={{
+              padding: "1.5rem",
+              border: "1px solid #D1F5D3",
+              backgroundColor: "#FCFAF8",
+              opacity: animated ? 1 : 0,
+              transform: animated ? "translateY(0)" : "translateY(20px)",
+              transition: "all 0.5s ease-in-out 0.2s",
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: "0.75rem",
+                color: "#6B7280",
+                textTransform: "uppercase" as const,
+                letterSpacing: "0.05em",
+              }}
+            >
               Trading Volume Analyzed
             </span>
             <div
@@ -219,7 +252,7 @@ export default function DataGraphs() {
                   fontFamily: "'JetBrains Mono', monospace",
                   fontSize: "0.85rem",
                   color: "white",
-                  fontWeight: 500,
+                  fontWeight: 800,
                 }}
               >
                 85%

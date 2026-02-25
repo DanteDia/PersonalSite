@@ -28,10 +28,10 @@ export default function DictionaryCard() {
             {/* Header */}
             <div style={{ paddingBottom: '1rem', borderBottom: '1px solid var(--machine-base)', display: 'flex', alignItems: 'baseline', gap: '1rem' }}>
                 <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', fontWeight: 600, margin: 0, color: 'var(--text-primary)'}}>
-                    Sov·er·eign Agent
+                    2026
                 </h3>
                 <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>
-                    /ˈsäv(ə)rən ˈājənt/
+                    /ˈtwen·ti twen·ti ˈsiks/
                 </span>
             </div>
 
@@ -44,18 +44,9 @@ export default function DictionaryCard() {
 
             {/* Body/Definitions */}
             <div style={{ marginTop: '1rem' }}>
-                <ol style={{ paddingLeft: '1.5rem', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    <li>
-                        An autonomous AI entity capable of independent goal-setting, value accrual, and transaction execution within a digital economy.
-                    </li>
-                    <li>
-                       A system that combines Large Language Models (LLMs) with on-chain protocols to create persistent, economically-active agents that operate on behalf of users or DAOs.
-                        <ul style={{ listStyleType: 'circle', paddingLeft: '1.5rem', marginTop: '1rem', fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--text-primary)' }}>
-                            <li>Owns a wallet.</li>
-                            <li>Can hold and transfer value (crypto/tokens).</li>
-                            <li>Executes tasks based on pre-defined logic.</li>
-                            <li>Learns and adapts from interactions.</li>
-                        </ul>
+                <ol style={{ paddingLeft: '1.5rem', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '1rem', margin: 0 }}>
+                    <li style={{ marginBottom: '1rem' }}>
+                        The year automation transcended mere tooling and became true agency. The paradigm shift when AI stopped waiting for permission and started executing autonomously. AGI takeoff point.
                     </li>
                 </ol>
             </div>
@@ -64,12 +55,12 @@ export default function DictionaryCard() {
             <div style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid var(--machine-base)', display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <LockIcon />
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--text-secondary)'}}>X402 Protocol</span>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--text-secondary)'}}>AGI Timeline</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <GitHubIcon />
-                     <a href="https://github.com/DanteDia/sovereign-agents" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--text-secondary)', textDecoration: 'none'}}>
-                        /sovereign-agents
+                     <a href="https://github.com/DanteDia/dante-cli" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--text-secondary)', textDecoration: 'none'}}>
+                        /dante-cli
                     </a>
                 </div>
             </div>
