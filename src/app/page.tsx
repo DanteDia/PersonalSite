@@ -1,36 +1,37 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Education from "@/components/Education";
-import Contact from "@/components/Contact";
+import WebEvolution from "@/components/WebEvolution";
+import DataGraphs from "@/components/DataGraphs";
+import TechnicalShowcase from "@/components/TechnicalShowcase";
+import DictionaryCard from "@/components/DictionaryCard";
+import EmbeddedXPost from "@/components/EmbeddedXPost";
+import Projects from "@/components/Projects"; // Keep this as it's still relevant
 
 export default function Home() {
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#faf8f4' }}>
+    <main className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)' }}>
       <Navigation />
       <Hero />
-      <About />
-      <Experience />
+      <WebEvolution />
+      <DataGraphs />
+      <TechnicalShowcase />
+      <DictionaryCard />
       <Projects />
-      <Education />
-      <Contact />
+      <EmbeddedXPost />
       
-      {/* Footer */}
       <footer style={{ 
-        padding: '2rem 0', 
+        padding: '3rem 1.5rem', 
         textAlign: 'center', 
-        borderTop: '1px solid #e5e3df',
-        backgroundColor: '#f5f3ef'
+        borderTop: '1px solid var(--border)',
+        backgroundColor: 'var(--bg-alt)'
       }}>
         <p style={{ 
           fontFamily: "'JetBrains Mono', monospace", 
           fontSize: '0.8rem', 
-          color: '#6a6a6a',
+          color: 'var(--text-muted)',
           margin: 0 
         }}>
-          © {new Date().getFullYear()} Dante Arola. Built with care.
+          © {new Date().getFullYear()} Dante Arola. Built at the edge of tomorrow.
         </p>
       </footer>
     </main>

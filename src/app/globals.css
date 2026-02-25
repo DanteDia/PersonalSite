@@ -1,15 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #faf8f4;
+  /* Human Side */
+  --bg-primary: #FCFAF8;
   --bg-alt: #f5f3ef;
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --text-muted: #6a6a6a;
-  --accent: #16a34a;
-  --accent-light: #22c55e;
+  --text-primary: #1C1C1C;
+  --text-secondary: #6B7280;
+  --text-muted: #9A9A9A;
+  
+  /* Machine Side */
+  --machine-base: #D1F5D3;
+  --machine-active: #10B981;
+  --machine-accent: #16A34A;
+  
+  /* Terminal */
+  --terminal-dark: #181818;
+  --terminal-string: #33D17D;
+  --terminal-url: #34CFF6;
+  --terminal-warning: #FF7B4B;
+  --terminal-text: #DCDCDC;
+  --terminal-bg: #F3F8F5;
+  
+  /* macOS Controls */
+  --macos-red: #FF5F56;
+  --macos-yellow: #FFBD2E;
+  --macos-green: #27C93F;
+  
+  /* Pixel */
+  --pixel-dark: #8F9497;
+  --pixel-mid: #B6B9BB;
+  --pixel-light: #D7D8D8;
+  --pixel-mint: #DCEDE3;
+  
+  /* Borders */
   --border: #e5e3df;
-  --border-light: #f0eeea;
+  --border-light: #D1F5D3;
+  --border-dark: #1C1C1C;
+  
+  /* Animation */
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.5s ease-in-out;
 }
 
 @theme inline {
@@ -18,10 +48,14 @@
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-muted: var(--text-muted);
-  --color-accent: var(--accent);
-  --color-accent-light: var(--accent-light);
-  --color-border: var(--border);
-  --color-border-light: var(--border-light);
+  --color-machine-base: var(--machine-base);
+  --color-machine-active: var(--machine-active);
+  --color-machine-accent: var(--machine-accent);
+  --color-terminal-dark: var(--terminal-dark);
+  --color-terminal-bg: var(--terminal-bg);
+  --color-macos-red: var(--macos-red);
+  --color-macos-yellow: var(--macos-yellow);
+  --color-macos-green: var(--macos-green);
 }
 
 html {
@@ -36,9 +70,10 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-/* Paper grain texture overlay */
+/* Subtle paper grain texture */
 body::before {
   content: '';
   position: fixed;
@@ -48,13 +83,13 @@ body::before {
   height: 100%;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   background-size: 200px 200px;
-  opacity: 0.03;
+  opacity: 0.02;
   pointer-events: none;
   z-index: 9999;
 }
 
 ::selection {
-  background: var(--accent);
+  background: var(--machine-active);
   color: white;
 }
 
@@ -74,4 +109,30 @@ body::before {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
+}
+
+/* Animation keyframes */
+@keyframes drawLine {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
 }

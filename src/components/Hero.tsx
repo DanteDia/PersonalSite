@@ -1,110 +1,74 @@
 "use client";
-
-import { useEffect, useRef } from "react";
+import CellularAutomataBackground from './CellularAutomataBackground';
 
 export default function Hero() {
-  const heroRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (heroRef.current) {
-      observer.observe(heroRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <header
-      ref={heroRef}
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        padding: "6rem 1.5rem 4rem",
-      }}
-    >
-      <div style={{ maxWidth: "800px", opacity: 0, animation: "fadeIn 0.8s ease-in-out forwards" }}>
-        <h1
-          style={{
-            fontSize: "clamp(1.8rem, 5vw, 3rem)",
-            fontWeight: 500,
-            marginBottom: "1.5rem",
-            letterSpacing: "-0.02em",
-            color: "#1a1a1a",
-            lineHeight: 1.2,
-          }}
-        >
+    <header style={{
+      position: 'relative',
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      padding: '6rem 1.5rem 4rem',
+      overflow: 'hidden',
+    }}>
+      <CellularAutomataBackground />
+      <div style={{
+        position: 'relative',
+        zIndex: 1,
+        maxWidth: '800px',
+        animation: 'fadeInUp 0.8s ease-in-out forwards',
+      }}>
+        <h1 style={{
+          fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+          fontWeight: 500,
+          marginBottom: '1.5rem',
+          letterSpacing: '-0.02em',
+          color: 'var(--text-primary)',
+          lineHeight: 1.2,
+          fontFamily: 'var(--font-serif)',
+        }}>
           Business Intelligence & Data Automation Specialist
         </h1>
-        <p
-          style={{
-            fontSize: "1.15rem",
-            color: "#4a4a4a",
-            fontStyle: "italic",
-            marginBottom: "2rem",
-          }}
-        >
-          From the Brazilian jungle to blockchain tokenization to banking data architecture
+        <p style={{
+          fontSize: '1.2rem',
+          color: 'var(--text-secondary)',
+          fontStyle: 'italic',
+          marginBottom: '2.5rem',
+          fontFamily: 'var(--font-serif)',
+        }}>
+          From the Brazilian jungle to banking data architecture to AI Sovereign ecosystems.
         </p>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "1rem",
-            flexWrap: "wrap",
-          }}
-        >
-          <a
-            href="mailto:aroladante@gmail.com"
-            style={{
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: "0.85rem",
-              color: "#6a6a6a",
-              textDecoration: "none",
-              transition: "color 0.5s ease-in-out",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#16a34a")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#6a6a6a")}
-          >
-            aroladante@gmail.com
-          </a>
-          <span style={{ color: "#e5e3df" }}>|</span>
-          <a
-            href="https://github.com/DanteDia"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: "0.85rem",
-              color: "#6a6a6a",
-              textDecoration: "none",
-              transition: "color 0.5s ease-in-out",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#16a34a")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#6a6a6a")}
-          >
-            github.com/DanteDia
-          </a>
+        <div style={{
+          fontFamily: 'var(--font-mono)',
+          fontSize: '1rem',
+          color: 'var(--text-primary)',
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          padding: '0.5rem 1rem',
+          border: '1px solid var(--border)',
+          backgroundColor: 'rgba(252, 250, 248, 0.8)',
+        }}>
+          <span>&gt;</span>
+          <span style={{
+            display: 'inline-block',
+            width: '10px',
+            height: '1.4em',
+            backgroundColor: 'var(--machine-active)',
+            animation: 'blink 1s step-end infinite',
+          }} />
         </div>
       </div>
       <style jsx>{`
-        @keyframes fadeIn {
+        @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
         }
       `}</style>
     </header>
