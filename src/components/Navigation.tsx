@@ -1,11 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,90 +13,78 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    { href: "#journey", label: "Journey" },
-    { href: "#skills", label: "Skills" },
-    { href: "#projects", label: "Projects" },
-    { href: "#blog", label: "Blog" },
-    { href: "#community", label: "Community" },
-  ];
+  const navStyle: React.CSSProperties = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 1000,
+    background: scrolled ? "rgba(250, 248, 244, 0.92)" : "transparent",
+    backdropFilter: scrolled ? "blur(12px)" : "none",
+    WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
+    borderBottom: scrolled ? "1px solid #e5e3df" : "none",
+    boxShadow: scrolled ? "0 2px 10px rgba(0, 0, 0, 0.05)" : "none",
+    transition: "all 0.5s ease-in-out",
+  };
+
+  const linkStyle: React.CSSProperties = {
+    fontSize: "0.85rem",
+    fontWeight: 400,
+    color: "#4a4a4a",
+    textTransform: "lowercase" as const,
+    letterSpacing: "0.02em",
+    textDecoration: "none",
+    transition: "color 0.5s ease-in-out",
+  };
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/80 backdrop-blur-lg border-b border-gray-800" : ""
-      }`}
-    >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold gradient-text">
+    <nav style={navStyle}>
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "0 auto",
+          padding: "0.8rem 1.5rem",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <a
+          href="#"
+          style={{
+            fontFamily: "'JetBrains Mono', monospace",
+            fontSize: "1.2rem",
+            fontWeight: 500,
+            color: "#1a1a1a",
+            letterSpacing: "0.05em",
+            textDecoration: "none",
+          }}
+        >
           DA
         </a>
-        
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-6">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm text-gray-400 hover:text-cyan-400 transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            href="#contact"
-            className="text-sm px-4 py-2 bg-cyan-500/10 text-cyan-400 rounded-full hover:bg-cyan-500/20 transition-colors"
-          >
-            Contact
-          </a>
-        </div>
-
-        {/* Mobile menu button */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 text-gray-400 hover:text-white"
+        <ul
+          style={{
+            display: "flex",
+            listStyle: "none",
+            gap: "2rem",
+            margin: 0,
+            padding: 0,
+          }}
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {mobileOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-      </div>
-
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-black/95 backdrop-blur-lg border-b border-gray-800"
-        >
-          <div className="px-6 py-4 space-y-3">
-            {links.map((link) => (
+          {["about", "experience", "projects", "contact"].map((item) => (
+            <li key={item}>
               <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="block text-gray-400 hover:text-cyan-400 transition-colors"
+                href={`#${item}`}
+                style={linkStyle}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#16a34a")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#4a4a4a")}
               >
-                {link.label}
+                {item}
               </a>
-            ))}
-            <a
-              href="#contact"
-              onClick={() => setMobileOpen(false)}
-              className="block text-cyan-400"
-            >
-              Contact
-            </a>
-          </div>
-        </motion.div>
-      )}
-    </motion.nav>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
 }
