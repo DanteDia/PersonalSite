@@ -50,25 +50,35 @@ const EducationItem = ({ degree, school, detail }: { degree: string; school: str
 export default function Education() {
   const education = [
     {
-      degree: "Data Analytics",
+      degree: "Data Analytics by Henry",
       school: "Henry — 2024",
-      detail: "700-hour intensive program | Python, SQL, Power BI, pandas, data visualization"
+      detail: "700 Hours Program focused on data analytics, visualization, and business intelligence | Python, SQL, pandas, Power BI, matplotlib, seaborn"
     },
     {
       degree: "Gritnova: Blockchain Crypto Management",
-      school: "New York, USA — 2022-2023",
-      detail: "Selected among thousands for prestige program by Ethereum, Solana, Avax & Algorand Foundations"
+      school: "New York, USA — 2022–2023",
+      detail: "Chosen between thousands to participate in prestige program given by Ethereum, Solana, Avax & Algorand Foundations"
     },
     {
-      degree: "Bachelor in Business Economics",
-      school: "Torcuato Di Tella University (UTDT) — 2016-2020",
-      detail: "Scholarship + Minor in Digital Marketing & Data Analytics"
+      degree: "Minor in Digital Marketing & Data Analytics",
+      school: "Torcuato Di Tella University (UTDT) — 2019–2020, Buenos Aires, Argentina",
+      detail: "Post-degree minor in applied data analytics and digital marketing"
     },
     {
       degree: "Exchange Program",
-      school: "Aalto University, Helsinki — 2019",
-      detail: "Neuroscience, Philosophy, Business & Art"
-    }
+      school: "Aalto University — 2019, Helsinki, Finland",
+      detail: "Art, Music, Philosophy, Neuroscience & Business studies"
+    },
+    {
+      degree: "Bachelor in Business Economics",
+      school: "Torcuato Di Tella University (UTDT) — 2016–2019, Buenos Aires, Argentina",
+      detail: "Scholarship awarded for high-school academic performance"
+    },
+    {
+      degree: "High School Diploma",
+      school: "ILSE — 2011–2015, Buenos Aires, Argentina",
+      detail: "Graduated from one of the top high schools in Latin America"
+    },
   ];
 
   return (
