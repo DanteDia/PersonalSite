@@ -34,11 +34,11 @@ type Chapter = {
 const chapters: Chapter[] = [
   {
     index: '01',
-    place: 'FINLAND',
+    place: 'BUENOS AIRES',
     chapter: 'The Foundation',
-    title: 'Neuroscience, Improv & Sound',
-    body: 'Living at −25°C, alternating between saunas and ice lake baths. Studied neuroscience, performed improv, engineered sound.',
-    pullQuote: 'Built adaptability in extreme conditions',
+    title: 'Business Economics at UTDT',
+    body: 'Bachelor in Business Economics at Torcuato Di Tella University on a scholarship earned from top grades at ILSE. Econometrics, capital markets, digital marketing, and data analytics — the economic first-principles that still shape how I think about data.',
+    pullQuote: 'First principles over frameworks',
   },
   {
     index: '02',
