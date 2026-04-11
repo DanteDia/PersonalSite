@@ -7,20 +7,40 @@ type Metric = {
   value: string;
   suffix?: string;
   caption?: string;
+  live?: boolean;
 };
 
-// TODO(verify): confirm real numbers for each metric before public deploy
-const metrics: Metric[] = [
-  {
-    label: "LLM Tokens Processed",
-    value: "120M",
-    suffix: "+",
-    caption: "across Claude, GPT & local models",
-  },
+type TokenUsageReport = {
+  total: number;
+  sources: Array<{
+    label: string;
+    tokens: number | null;
+    configured: boolean;
+    error?: string;
+  }>;
+  lastUpdated: string;
+};
+
+/**
+ * Format a raw token count into compact portfolio-friendly notation.
+ *   1_500 → "1.5K"
+ *   1_500_000 → "1.5M"
+ *   1_500_000_000 → "1.5B"
+ */
+function formatTokens(n: number): { value: string; suffix: string } {
+  if (n >= 1_000_000_000) return { value: (n / 1_000_000_000).toFixed(1), suffix: "B" };
+  if (n >= 1_000_000) return { value: (n / 1_000_000).toFixed(n >= 10_000_000 ? 0 : 1), suffix: "M" };
+  if (n >= 1_000) return { value: (n / 1_000).toFixed(0), suffix: "K" };
+  return { value: String(n), suffix: "" };
+}
+
+// Static metrics that don't have a live data source. The LLM Tokens card
+// is injected separately and updated from /api/token-usage.
+const staticMetrics: Metric[] = [
   {
     label: "Hackathons Won",
     value: "1",
-    caption: "Panorama Verde — 2026",
+    caption: "Industriesverified.com — 2026",
   },
   {
     label: "Repos Shipped",
@@ -37,6 +57,8 @@ const metrics: Metric[] = [
 
 export default function DataGraphs() {
   const [animated, setAnimated] = useState(false);
+  const [tokenReport, setTokenReport] = useState<TokenUsageReport | null>(null);
+  const [tokenLoading, setTokenLoading] = useState(true);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -49,6 +71,67 @@ export default function DataGraphs() {
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
+
+  // Poll /api/token-usage on mount and every 60s. The server route is
+  // cached for 5 minutes, so polling is cheap — it just avoids needing
+  // a page reload to see new numbers.
+  useEffect(() => {
+    let cancelled = false;
+    async function load() {
+      try {
+        const res = await fetch("/api/token-usage", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = (await res.json()) as TokenUsageReport;
+        if (!cancelled) {
+          setTokenReport(data);
+          setTokenLoading(false);
+        }
+      } catch {
+        if (!cancelled) setTokenLoading(false);
+      }
+    }
+    load();
+    const interval = setInterval(load, 60_000);
+    return () => {
+      cancelled = true;
+      clearInterval(interval);
+    };
+  }, []);
+
+  // Build the LLM Tokens metric from the live report, falling back to a
+  // placeholder if no providers are configured or the fetch is loading.
+  const liveTotal = tokenReport?.total ?? 0;
+  const anyConfigured = tokenReport?.sources.some((s) => s.configured) ?? false;
+  const configuredLabels =
+    tokenReport?.sources
+      .filter((s) => s.configured && s.tokens !== null)
+      .map((s) => s.label)
+      .join(" · ") ?? "";
+
+  const llmMetric: Metric = (() => {
+    if (tokenLoading) {
+      return { label: "LLM Tokens Processed", value: "…", caption: "fetching live usage", live: true };
+    }
+    if (!anyConfigured || liveTotal === 0) {
+      return {
+        label: "LLM Tokens Processed",
+        value: "120",
+        suffix: "M+",
+        caption: "estimate — configure API keys to go live",
+        live: false,
+      };
+    }
+    const formatted = formatTokens(liveTotal);
+    return {
+      label: "LLM Tokens Processed",
+      value: formatted.value,
+      suffix: formatted.suffix,
+      caption: configuredLabels ? `live from ${configuredLabels}` : "live",
+      live: true,
+    };
+  })();
+
+  const metrics: Metric[] = [llmMetric, ...staticMetrics];
 
   return (
     <section ref={sectionRef} style={{ padding: "5rem 0" }}>
@@ -117,9 +200,37 @@ export default function DataGraphs() {
                   color: "var(--text-tertiary)",
                   textTransform: "uppercase" as const,
                   letterSpacing: "0.05em",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.4rem",
                 }}
               >
                 {m.label}
+                {m.live && (
+                  <span
+                    aria-label="live"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "0.25rem",
+                      color: "var(--machine-active)",
+                      fontSize: "0.62rem",
+                      textTransform: "uppercase" as const,
+                      letterSpacing: "0.08em",
+                    }}
+                  >
+                    <span
+                      style={{
+                        width: "6px",
+                        height: "6px",
+                        borderRadius: "50%",
+                        backgroundColor: "var(--machine-active)",
+                        animation: "pulse 2s ease-in-out infinite",
+                      }}
+                    />
+                    live
+                  </span>
+                )}
               </span>
               <div
                 style={{

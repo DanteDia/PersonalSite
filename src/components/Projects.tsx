@@ -31,16 +31,16 @@ const ProjectCard = ({ title, status, link, description, tech }: { title: string
 export default function Projects() {
   const projects = [
     {
-      title: "Panorama Verde",
+      title: "Industriesverified.com",
       status: "Hackathon Winner",
-      link: "https://github.com/DanteDia/argentina-green-panorama",
-      description: "A 3D atlas of Argentina's green economy. Carbon corridors, agricultural flows, and green-finance signals rendered on an interactive globe, with on-chain verification through GenLayer (industriesverified.com) and LLM-assisted insights via OpenAI.",
+      link: "https://industriesverified.com",
+      description: "On-chain verification infrastructure for real-world industrial data. Built on GenLayer with FastAPI + Supabase, with an OpenAI-assisted insight layer and a 3D globe of Argentina's green economy (the hackathon-winning Panorama Verde demo). The most important project on my desk right now.",
       tech: ["Next.js 16", "TypeScript", "Supabase", "GenLayer", "FastAPI", "OpenAI", "Cobe", "React Force Graph"]
     },
     {
-      title: "Cables",
+      title: "Fund Management Platform",
       link: "https://github.com/DanteDia/DashboardFintech",
-      description: "A minimalist real-time fintech command deck for fund tracking and portfolio signals. Built on Recharts and Lucide for traders who don't want another cluttered BI tool.",
+      description: "Real-time portfolio tracking, fund analytics, and rebalancing signals. A minimalist command deck built on Recharts and Lucide for fund managers who don't want another cluttered BI tool.",
       tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind 4", "Recharts", "Lucide"]
     },
     {

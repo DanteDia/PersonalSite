@@ -71,7 +71,7 @@ export default function About() {
             marginBottom: 0,
             lineHeight: 1.7,
           }}>
-            From the Brazilian jungle to blockchain tokenization to banking data architecture — I bring cross-context pattern recognition to complex technical challenges. Recently won a hackathon with <strong style={{ color: 'var(--text-primary)' }}>Panorama Verde</strong>, an Argentina-focused green-economy atlas built on Supabase and <strong style={{ color: 'var(--text-primary)' }}>GenLayer (industriesverified.com)</strong>.
+            From the Brazilian jungle to blockchain tokenization to banking data architecture — I bring cross-context pattern recognition to complex technical challenges. Currently building <strong style={{ color: 'var(--text-primary)' }}>OpenClaw</strong>, a multi-agent orchestration layer, and recently won a hackathon with <strong style={{ color: 'var(--text-primary)' }}>Industriesverified.com</strong>, an on-chain verification platform built on GenLayer.
           </p>
         </div>
 
@@ -104,6 +104,10 @@ export default function About() {
             <SkillCategory
               title="Frontend & Visualization"
               skills="Next.js 16, React 19, TypeScript, Tailwind CSS 4, Cobe (3D globe), React Force Graph, Recharts, Lucide, Framer Motion"
+            />
+            <SkillCategory
+              title="AI Agents & Orchestration"
+              skills="OpenClaw, Claude Agent SDK, MCP (Model Context Protocol), multi-agent orchestration, sub-agent routing, autonomous workflows, OpenRouter, LLM pipelines"
             />
             <SkillCategory
               title="Blockchain & Verification"
