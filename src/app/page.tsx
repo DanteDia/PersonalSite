@@ -5,12 +5,10 @@ import About from "@/components/About";
 import WebEvolution from "@/components/WebEvolution";
 import DataGraphs from "@/components/DataGraphs";
 import TechnicalShowcase from "@/components/TechnicalShowcase";
-import DictionaryCard from "@/components/DictionaryCard";
 import Experience from "@/components/Experience";
 import SpeakingEvents from "@/components/SpeakingEvents";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
-import EmbeddedXPost from "@/components/EmbeddedXPost";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -23,12 +21,10 @@ export default function Home() {
       <WebEvolution />
       <DataGraphs />
       <TechnicalShowcase />
-      <DictionaryCard />
       <Experience />
       <SpeakingEvents />
       <Projects />
       <Education />
-      <EmbeddedXPost />
       <Contact />
 
       <footer style={{
