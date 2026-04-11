@@ -11,6 +11,7 @@ const XIcon = () => (
 );
 
 export default function EmbeddedXPost() {
+  // TODO(confirm): tweet URL looks synthetic (status ID embeds "2026"); replace with real tweet from @dante_arola
   const postUrl = "https://x.com/dante_arola/status/2026508473022779509?s=46";
 
   return (

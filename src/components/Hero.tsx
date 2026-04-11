@@ -38,7 +38,7 @@ export default function Hero() {
           marginBottom: '2.5rem',
           fontFamily: 'var(--font-serif)',
         }}>
-          From the Brazilian jungle to banking data architecture to AI Sovereign ecosystems.
+          From the Brazilian jungle to banking data pipelines. 5 countries. Infinite curiosity.
         </p>
         <div style={{
           fontFamily: 'var(--font-mono)',

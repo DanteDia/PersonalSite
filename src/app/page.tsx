@@ -1,37 +1,49 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import Journey from "@/components/Journey";
+import About from "@/components/About";
 import WebEvolution from "@/components/WebEvolution";
 import DataGraphs from "@/components/DataGraphs";
 import TechnicalShowcase from "@/components/TechnicalShowcase";
 import DictionaryCard from "@/components/DictionaryCard";
+import Experience from "@/components/Experience";
+import SpeakingEvents from "@/components/SpeakingEvents";
+import Projects from "@/components/Projects";
+import Education from "@/components/Education";
 import EmbeddedXPost from "@/components/EmbeddedXPost";
-import Projects from "@/components/Projects"; // Keep this as it's still relevant
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: 'var(--bg-primary)' }}>
       <Navigation />
       <Hero />
+      <Journey />
+      <About />
       <WebEvolution />
       <DataGraphs />
       <TechnicalShowcase />
       <DictionaryCard />
+      <Experience />
+      <SpeakingEvents />
       <Projects />
+      <Education />
       <EmbeddedXPost />
-      
-      <footer style={{ 
-        padding: '3rem 1.5rem', 
-        textAlign: 'center', 
+      <Contact />
+
+      <footer style={{
+        padding: '3rem 1.5rem',
+        textAlign: 'center',
         borderTop: '1px solid var(--border)',
         backgroundColor: 'var(--bg-alt)'
       }}>
-        <p style={{ 
-          fontFamily: "'JetBrains Mono', monospace", 
-          fontSize: '0.8rem', 
+        <p style={{
+          fontFamily: "var(--font-mono)",
+          fontSize: '0.8rem',
           color: 'var(--text-muted)',
-          margin: 0 
+          margin: 0
         }}>
-          © {new Date().getFullYear()} Dante Arola. Built at the edge of tomorrow.
+          © {new Date().getFullYear()} Dante Arola. Built with curiosity and too much coffee.
         </p>
       </footer>
     </main>
