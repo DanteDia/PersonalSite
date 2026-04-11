@@ -1,9 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const NAV_ITEMS = ["journey", "about", "experience", "projects", "writing", "contact"] as const;
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const onHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +25,10 @@ export default function Navigation() {
     left: 0,
     right: 0,
     zIndex: 1000,
-    background: scrolled ? "rgba(250, 248, 244, 0.92)" : "transparent",
+    background: scrolled ? "rgba(252, 250, 248, 0.92)" : "transparent",
     backdropFilter: scrolled ? "blur(12px)" : "none",
     WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
-    borderBottom: scrolled ? "1px solid #e5e3df" : "none",
+    borderBottom: scrolled ? "1px solid var(--border)" : "none",
     boxShadow: scrolled ? "0 2px 10px rgba(0, 0, 0, 0.05)" : "none",
     transition: "all 0.5s ease-in-out",
   };
@@ -30,11 +36,18 @@ export default function Navigation() {
   const linkStyle: React.CSSProperties = {
     fontSize: "0.85rem",
     fontWeight: 400,
-    color: "#4a4a4a",
+    color: "var(--text-secondary)",
     textTransform: "lowercase" as const,
     letterSpacing: "0.02em",
     textDecoration: "none",
     transition: "color 0.5s ease-in-out",
+    fontFamily: "var(--font-mono)",
+  };
+
+  const hrefFor = (item: string) => {
+    if (item === "writing") return "/blog";
+    // Hash anchors on home stay as "#id"; from other routes, prefix with "/"
+    return onHome ? `#${item}` : `/#${item}`;
   };
 
   return (
@@ -49,38 +62,39 @@ export default function Navigation() {
           alignItems: "center",
         }}
       >
-        <a
-          href="#"
+        <Link
+          href="/"
           style={{
-            fontFamily: "'JetBrains Mono', monospace",
+            fontFamily: "var(--font-mono)",
             fontSize: "1.2rem",
             fontWeight: 500,
-            color: "#1a1a1a",
+            color: "var(--text-primary)",
             letterSpacing: "0.05em",
             textDecoration: "none",
           }}
         >
           DA
-        </a>
+        </Link>
         <ul
           style={{
             display: "flex",
             listStyle: "none",
-            gap: "2rem",
+            gap: "1.75rem",
             margin: 0,
             padding: 0,
+            flexWrap: "wrap" as const,
           }}
         >
-          {["about", "experience", "projects", "contact"].map((item) => (
+          {NAV_ITEMS.map((item) => (
             <li key={item}>
-              <a
-                href={`#${item}`}
+              <Link
+                href={hrefFor(item)}
                 style={linkStyle}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#16a34a")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#4a4a4a")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--machine-accent)")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "var(--text-secondary)")}
               >
                 {item}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

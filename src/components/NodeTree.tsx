@@ -29,6 +29,7 @@ export default function NodeTree() {
       }}>
         Mission Control: Agent Hierarchy
       </h3>
+      {/* TODO(confirm): subagent names Pango/Nico/Javi/Ari/Vita — real or placeholder? */}
       <Node name="Dante Arola">
         <Node name="Pango" level={1} />
         <Node name="Nico" level={1} />

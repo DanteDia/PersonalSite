@@ -25,6 +25,7 @@ export default function DataGraphs() {
 
   return (
     <section ref={sectionRef} style={{ padding: "5rem 0" }}>
+      {/* TODO(verify): 85% automation / 50K+ ha / 4,500+ hrs / $50M+ trading volume — sourced from Experience.tsx, confirm before public deploy */}
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 1.5rem" }}>
         <h2
           style={{

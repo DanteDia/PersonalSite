@@ -17,7 +17,7 @@ const ProjectCard = ({ title, status, link, description, tech }: { title: string
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
       <h3 style={{ fontSize: '1.1rem', fontWeight: 600, margin: 0 }}>{title}</h3>
       {status && <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem', textTransform: 'uppercase' as const, letterSpacing: '0.05em', padding: '0.2rem 0.6rem', background: '#f5f3ef', color: '#6a6a6a', border: '1px solid #e5e3df' }}>{status}</span>}
-      {link && <a href={link} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', color: '#16a34a', textDecoration: 'none' }}>Live →</a>}
+      {link && <a href={link} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', color: '#16a34a', textDecoration: 'none' }}>{link.includes('github.com') ? 'GitHub →' : 'Live →'}</a>}
     </div>
     <p style={{ fontSize: '0.95rem', color: '#4a4a4a', marginBottom: '1.2rem', lineHeight: 1.6 }}>{description}</p>
     <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '0.5rem' }}>
@@ -48,6 +48,7 @@ export default function Projects() {
     },
     {
       title: "Zoho Books to Looker Studio Pipeline",
+      link: "https://github.com/DanteDia/Zoho-Books-Real-Time-Data-Integration-with-Zapier-and-Looker-Studio",
       description: "Automated accounting data flow using Zapier and Google Sheets. Real-time financial visualization without manual exports.",
       tech: ["Zoho Books", "Zapier", "Google Sheets", "Looker Studio"]
     },

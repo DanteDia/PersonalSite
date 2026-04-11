@@ -1,23 +1,63 @@
 "use client";
 
 const SectionTitle = ({ title }: { title: string }) => (
-  <h2 style={{ fontSize: '1.8rem', marginBottom: '2.5rem', textAlign: 'center', position: 'relative', color: '#1a1a1a', fontWeight: 500 }}>
+  <h2 style={{
+    fontSize: '1.8rem',
+    marginBottom: '2.5rem',
+    textAlign: 'center',
+    position: 'relative',
+    color: 'var(--text-primary)',
+    fontWeight: 500,
+    fontFamily: 'var(--font-serif)',
+  }}>
     {title}
-    <span style={{ display: 'block', width: '40px', height: '2px', background: '#16a34a', margin: '1rem auto 0', opacity: 0.6 }} />
+    <span style={{
+      display: 'block',
+      width: '40px',
+      height: '2px',
+      background: 'var(--machine-accent)',
+      margin: '1rem auto 0',
+      opacity: 0.6,
+    }} />
   </h2>
 );
 
 const ExperienceItem = ({ role, company, date, achievements }: { role: string; company: string; date: string; achievements: string[] }) => (
-  <article style={{ padding: '2rem 0', borderBottom: '1px solid #e5e3df' }}>
+  <article style={{ padding: '2rem 0', borderBottom: '1px solid var(--border)' }}>
     <div style={{ marginBottom: '1.2rem' }}>
-      <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.3rem' }}>{role}</h3>
-      <span style={{ display: 'block', fontSize: '1rem', color: '#16a34a', fontWeight: 500, marginBottom: '0.3rem' }}>{company}</span>
-      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '0.8rem', color: '#6a6a6a', textTransform: 'uppercase' as const, letterSpacing: '0.05em' }}>{date}</span>
+      <h3 style={{
+        fontSize: '1.25rem',
+        fontWeight: 600,
+        marginBottom: '0.3rem',
+        color: 'var(--text-primary)',
+        fontFamily: 'var(--font-serif)',
+      }}>{role}</h3>
+      <span style={{
+        display: 'block',
+        fontSize: '1rem',
+        color: 'var(--machine-accent)',
+        fontWeight: 500,
+        marginBottom: '0.3rem',
+      }}>{company}</span>
+      <span style={{
+        fontFamily: 'var(--font-mono)',
+        fontSize: '0.8rem',
+        color: 'var(--text-muted)',
+        textTransform: 'uppercase' as const,
+        letterSpacing: '0.05em',
+      }}>{date}</span>
     </div>
     <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
       {achievements.map((item, index) => (
-        <li key={index} style={{ position: 'relative', paddingLeft: '1.5rem', marginBottom: '0.6rem', color: '#4a4a4a', fontSize: '0.95rem' }}>
-          <span style={{ position: 'absolute', left: 0, color: '#16a34a' }}>—</span>
+        <li key={index} style={{
+          position: 'relative',
+          paddingLeft: '1.5rem',
+          marginBottom: '0.6rem',
+          color: 'var(--text-secondary)',
+          fontSize: '0.95rem',
+          lineHeight: 1.65,
+        }}>
+          <span style={{ position: 'absolute', left: 0, color: 'var(--machine-accent)' }}>—</span>
           <span dangerouslySetInnerHTML={{ __html: item }} />
         </li>
       ))}
@@ -26,6 +66,7 @@ const ExperienceItem = ({ role, company, date, achievements }: { role: string; c
 );
 
 export default function Experience() {
+  // TODO(verify): "85%" reporting reduction, "50K+ hectares", and "$50M+ volume" figures — confirm accuracy before public deploy.
   const experiences = [
     {
       role: 'Business Intelligence Analyst',
@@ -61,7 +102,12 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" style={{ padding: '5rem 0', backgroundColor: '#f5f3ef', borderTop: '1px solid #e5e3df', borderBottom: '1px solid #e5e3df' }}>
+    <section id="experience" style={{
+      padding: '5rem 0',
+      backgroundColor: 'var(--bg-alt)',
+      borderTop: '1px solid var(--border)',
+      borderBottom: '1px solid var(--border)',
+    }}>
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 1.5rem' }}>
         <SectionTitle title="Experience" />
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>

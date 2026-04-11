@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 :root {
+  /* Fonts */
+  --font-serif: var(--font-eb-garamond), 'EB Garamond', Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), 'JetBrains Mono', monospace;
+
   /* Human Side */
   --bg-primary: #FCFAF8;
   --bg-alt: #f5f3ef;
