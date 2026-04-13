@@ -154,7 +154,7 @@ export default function SpeakingEvents() {
           fontStyle: 'italic',
           fontFamily: 'var(--font-serif)',
         }}>
-          Extras. Side roles where the Web3 world and the physical world collided.
+          Extras. Side roles where the web3/AI world and the physical world collided.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           {cards.map((c, i) => <EventCard key={i} card={c} />)}
