@@ -5,7 +5,6 @@ import About from "@/components/About";
 import WebEvolution from "@/components/WebEvolution";
 import DataGraphs from "@/components/DataGraphs";
 import TechnicalShowcase from "@/components/TechnicalShowcase";
-import Experience from "@/components/Experience";
 import SpeakingEvents from "@/components/SpeakingEvents";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
@@ -21,7 +20,6 @@ export default function Home() {
       <WebEvolution />
       <DataGraphs />
       <TechnicalShowcase />
-      <Experience />
       <SpeakingEvents />
       <Projects />
       <Education />
@@ -39,7 +37,7 @@ export default function Home() {
           color: 'var(--text-muted)',
           margin: 0
         }}>
-          © {new Date().getFullYear()} Dante Arola. Built with curiosity and too much coffee.
+          © {new Date().getFullYear()} Dante Arola.
         </p>
       </footer>
     </main>
