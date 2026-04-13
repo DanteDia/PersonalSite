@@ -140,3 +140,26 @@ body::before {
   0%, 100% { opacity: 0.4; }
   50% { opacity: 0.8; }
 }
+
+/* Terminal status dots */
+.pulse-dot {
+  color: #10B981;
+  animation: pulseDot 2s ease-in-out infinite;
+  display: inline;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; text-shadow: 0 0 4px rgba(16, 185, 129, 0.4); }
+  50% { opacity: 0.5; text-shadow: 0 0 8px rgba(16, 185, 129, 0.8); }
+}
+
+.spin-dot {
+  color: #FFBD2E;
+  display: inline-block;
+  animation: spinDot 2s linear infinite;
+}
+
+@keyframes spinDot {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

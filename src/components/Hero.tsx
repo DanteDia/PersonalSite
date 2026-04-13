@@ -1,13 +1,19 @@
 "use client";
 import { useEffect, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import CellularAutomataBackground from "./CellularAutomataBackground";
 
 const SUBTITLE = "From the Brazilian jungle to banking data pipelines. 5 countries. Infinite curiosity.";
-const CHAR_DELAY = 35; // ms per character
+const CHAR_DELAY = 35;
 
 export default function Hero() {
   const [typed, setTyped] = useState("");
   const [showCursor, setShowCursor] = useState(true);
+
+  const { scrollY } = useScroll();
+  const bgY = useTransform(scrollY, [0, 600], [0, 180]);
+  const contentY = useTransform(scrollY, [0, 600], [0, 60]);
+  const contentOpacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   useEffect(() => {
     let i = 0;
@@ -22,7 +28,6 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  // Blink cursor forever
   useEffect(() => {
     const blink = setInterval(() => setShowCursor((v) => !v), 530);
     return () => clearInterval(blink);
@@ -41,14 +46,23 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      <CellularAutomataBackground />
-      <div
+      {/* Parallax background — moves faster than content */}
+      <motion.div style={{ y: bgY, position: "absolute", inset: 0, zIndex: 0 }}>
+        <CellularAutomataBackground />
+      </motion.div>
+
+      {/* Content — slower parallax + fade on scroll */}
+      <motion.div
         style={{
           position: "relative",
           zIndex: 1,
           maxWidth: "800px",
-          animation: "fadeInUp 0.8s ease-in-out forwards",
+          y: contentY,
+          opacity: contentOpacity,
         }}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" as const }}
       >
         <h1
           style={{
@@ -64,7 +78,6 @@ export default function Hero() {
           Business Intelligence & Data Automation Specialist
         </h1>
 
-        {/* Typewriter subtitle with green cursor */}
         <div
           style={{
             fontFamily: "var(--font-mono)",
@@ -106,19 +119,7 @@ export default function Hero() {
             />
           </span>
         </div>
-      </div>
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
+      </motion.div>
     </header>
   );
 }
