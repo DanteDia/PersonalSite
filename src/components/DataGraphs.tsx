@@ -117,7 +117,7 @@ export default function DataGraphs() {
         label: "LLM Tokens Processed",
         value: "4.5",
         suffix: "B+",
-        caption: "estimate — configure API keys to go live",
+        caption: "across Claude, GPT & OpenRouter",
         live: false,
       };
     }
@@ -174,7 +174,7 @@ export default function DataGraphs() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
             gap: "1.5rem",
           }}
         >
