@@ -83,7 +83,7 @@ export default function Terminal({ variant = "light", title, lines, showPrompt =
             {line.type === 'command' && showPrompt && (
               <span style={{ color: isDark ? '#10B981' : '#16A34A', fontFamily: "'JetBrains Mono', monospace" }}>$</span>
             )}
-            <span style={getLineStyle(line.type)}>{line.text}</span>
+            <span style={getLineStyle(line.type)} dangerouslySetInnerHTML={{ __html: line.text }} />
             {index === visibleLines - 1 && line.type === 'command' && showPrompt && (
               <span style={{
                 display: 'inline-block',
