@@ -43,10 +43,10 @@ const staticMetrics: Metric[] = [
     caption: "Industriesverified.com — 2026",
   },
   {
-    label: "Repos Shipped",
+    label: "Products Shipped",
     value: "10",
     suffix: "+",
-    caption: "public on github.com/DanteDia",
+    caption: "deployed on github.com/DanteDia",
   },
   {
     label: "Countries Lived In",
@@ -115,8 +115,8 @@ export default function DataGraphs() {
     if (!anyConfigured || liveTotal === 0) {
       return {
         label: "LLM Tokens Processed",
-        value: "120",
-        suffix: "M+",
+        value: "4.5",
+        suffix: "B+",
         caption: "estimate — configure API keys to go live",
         live: false,
       };

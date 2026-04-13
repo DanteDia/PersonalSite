@@ -32,25 +32,35 @@ export default function Projects() {
   const projects = [
     {
       title: "Industriesverified.com",
-      status: "Hackathon Winner",
+      status: "Hackathon Winner · Dev",
       link: "https://industriesverified.com",
       description: "On-chain verification infrastructure for real-world industrial data. Built on GenLayer with FastAPI + Supabase, with an OpenAI-assisted insight layer and a 3D globe of Argentina's green economy (the hackathon-winning Panorama Verde demo). The most important project on my desk right now.",
       tech: ["Next.js 16", "TypeScript", "Supabase", "GenLayer", "FastAPI", "OpenAI", "Cobe", "React Force Graph"]
     },
     {
+      title: "Oxygen Token",
+      status: "Blockchain PM",
+      link: "https://oxygentoken.org",
+      description: "Tokenization platform for native Argentinian forest carbon credits on Polygon. Led business development and project management across 5 time zones and 3 languages, connecting DeFi protocols with real-world environmental assets covering 50K+ hectares.",
+      tech: ["Polygon", "Smart Contracts", "Token Economics", "DeFi", "Carbon Credits"]
+    },
+    {
       title: "Fund Management Platform",
+      status: "Dev",
       link: "https://github.com/DanteDia/DashboardFintech",
       description: "Real-time portfolio tracking, fund analytics, and rebalancing signals. A minimalist command deck built on Recharts and Lucide for fund managers who don't want another cluttered BI tool.",
       tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind 4", "Recharts", "Lucide"]
     },
     {
       title: "Power BI Cartographer",
+      status: "Dev",
       link: "https://github.com/DanteDia/Powerbi-AI",
       description: "A Python toolchain that reverse-engineers legacy Power BI models — 62 tables, 82 DAX measures, 98 pages — into a documented migration plan. Uses pbixray + duckdb + networkx to map entities, audit measures, and plan a clean SQL rebuild.",
       tech: ["Python", "pbixray", "duckdb", "pandas", "networkx", "DAX", "SQL"]
     },
     {
       title: "BIG PDF to Excel Converter",
+      status: "Dev",
       link: "https://big-pdf-to-excel-converter.streamlit.app",
       description: "Automated tax report processing for Argentine financial markets. Converts Datalab PDFs into structured Excel with intelligent post-processing.",
       tech: ["Python", "Streamlit", "Datalab OCR API", "openpyxl"]

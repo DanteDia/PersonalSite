@@ -59,19 +59,10 @@ export default function About() {
             fontSize: '1.05rem',
             color: 'var(--text-secondary)',
             textAlign: 'justify',
-            marginBottom: '1.2rem',
-            lineHeight: 1.7,
-          }}>
-            Business Intelligence Analyst bridging enterprise data systems with modern automation. Currently architecting end-to-end data pipelines at <strong style={{ color: 'var(--text-primary)' }}>BIND (Banco Industrial)</strong>, turning raw financial data into real-time, executive-ready intelligence.
-          </p>
-          <p style={{
-            fontSize: '1.05rem',
-            color: 'var(--text-secondary)',
-            textAlign: 'justify',
             marginBottom: 0,
             lineHeight: 1.7,
           }}>
-            From the Brazilian jungle to blockchain tokenization to banking data architecture — I bring cross-context pattern recognition to complex technical challenges. Currently building <strong style={{ color: 'var(--text-primary)' }}>OpenClaw</strong>, a multi-agent orchestration layer, and recently won a hackathon with <strong style={{ color: 'var(--text-primary)' }}>Industriesverified.com</strong>, an on-chain verification platform built on GenLayer.
+            Business Intelligence Analyst bridging enterprise data systems with modern automation. Currently architecting end-to-end data pipelines at <strong style={{ color: 'var(--text-primary)' }}>BIND (Banco Industrial)</strong>, turning raw financial data into real-time, executive-ready intelligence. I bring cross-context pattern recognition to complex technical challenges. Hands on building multi-agent orchestration systems both for personal and enterprise use. <strong style={{ color: 'var(--text-primary)' }}>Industriesverified.com</strong>, an industry mapping platform being 24/7 built by research agents and data verified by GenLayer AI-Blockchain.
           </p>
         </div>
 
@@ -110,8 +101,8 @@ export default function About() {
               skills="OpenClaw, Claude Agent SDK, MCP (Model Context Protocol), multi-agent orchestration, sub-agent routing, autonomous workflows, OpenRouter, LLM pipelines"
             />
             <SkillCategory
-              title="Blockchain & Verification"
-              skills="GenLayer (industriesverified.com), smart contract analysis, token economics, DeFi protocols, Ethereum, Solana, Avax, Algorand"
+              title="Blockchain"
+              skills="GenLayer (industriesverified.com), smart contract analysis, token economics, DeFi protocols, Ethereum, Polygon (oxygentoken.org)"
             />
           </div>
         </div>

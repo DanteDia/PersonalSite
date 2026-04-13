@@ -28,44 +28,38 @@ const SectionTitle = ({ title }: { title: string }) => (
 
 export default function TechnicalShowcase() {
   const terminalLines = [
-    { text: "# Stack used on the current repo", type: "comment" as const, delay: 500 },
-    { text: "cat package.json | jq '.dependencies'", type: "command" as const, delay: 1200 },
-    { text: '  "next": "16.2.1",', type: "output" as const, delay: 300 },
-    { text: '  "react": "19.2.4",', type: "output" as const, delay: 250 },
-    { text: '  "@supabase/supabase-js": "2.99.3",', type: "output" as const, delay: 250 },
-    { text: '  "genlayer-js": "0.23.0",', type: "output" as const, delay: 250 },
-    { text: '  "openai": "1.50.0"  # backend/requirements.txt', type: "output" as const, delay: 250 },
-    { text: "# ↑ Panorama Verde — hackathon winner, Apr 2026", type: "comment" as const, delay: 700 },
+    { text: "$ dante-cli status --all", type: "command" as const, delay: 800 },
+    { text: "", type: "output" as const, delay: 300 },
+    { text: "  PRODUCT                     STATUS    STACK", type: "output" as const, delay: 200 },
+    { text: "  ─────────────────────────────────────────────", type: "output" as const, delay: 150 },
+    { text: "  industriesverified.com       ● online  GenLayer · Supabase · FastAPI", type: "output" as const, delay: 400 },
+    { text: "  fund-management-platform     ● online  Next.js 16 · Recharts · Tailwind", type: "output" as const, delay: 350 },
+    { text: "  big-pdf-converter            ● online  Streamlit · Datalab OCR", type: "output" as const, delay: 300 },
+    { text: "  zoho-looker-pipeline         ● online  Zapier · Google Sheets · Looker", type: "output" as const, delay: 300 },
+    { text: "  powerbi-cartographer         ○ local   Python · pbixray · duckdb", type: "output" as const, delay: 300 },
+    { text: "  openclaw                     ◐ building  Claude SDK · MCP · agents", type: "output" as const, delay: 400 },
+    { text: "", type: "output" as const, delay: 200 },
+    { text: "  6 products · 4 online · 1 local · 1 building", type: "comment" as const, delay: 500 },
+    { text: "  last deploy: industriesverified.com — 2h ago", type: "comment" as const, delay: 400 },
   ];
 
   return (
     <section style={{ padding: "5rem 0" }}>
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 1.5rem" }}>
-        <SectionTitle title="Technical Architecture" />
-        <div
+        <SectionTitle title="System Status" />
+        <p
           style={{
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: "3rem",
-            alignItems: "flex-start",
+            textAlign: "center",
+            color: "var(--text-secondary)",
+            maxWidth: "640px",
+            margin: "0 auto 2.5rem",
+            fontFamily: "var(--font-serif)",
+            fontStyle: "italic",
           }}
         >
-          <p
-            style={{
-              textAlign: "center",
-              color: "var(--text-secondary)",
-              maxWidth: "640px",
-              margin: "0 auto",
-              fontFamily: "var(--font-serif)",
-              fontStyle: "italic",
-            }}
-          >
-            I build systems that bridge enterprise data infrastructure with modern
-            AI-assisted workflows — Next.js on the front, FastAPI + Supabase on the back,
-            LLM calls where they actually add leverage.
-          </p>
-          <Terminal variant="dark" title="~/panorama-verde" lines={terminalLines} />
-        </div>
+          Everything I build, ship, and maintain — from one terminal.
+        </p>
+        <Terminal variant="dark" title="~/dante-workspace" lines={terminalLines} />
       </div>
     </section>
   );
