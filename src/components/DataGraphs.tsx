@@ -33,7 +33,7 @@ function formatTokens(n: number): { value: string; suffix: string } {
 const staticMetrics: Metric[] = [
   { label: "Hackathons Won", numericValue: 1, decimals: 0, caption: "Industriesverified.com — 2026" },
   { label: "Products Shipped", numericValue: 10, decimals: 0, suffix: "+", caption: "deployed on github.com/DanteDia" },
-  { label: "Countries Lived In", numericValue: 5, decimals: 0, caption: "AR · BR · FI · US · (and counting)" },
+  { label: "Countries Lived In", numericValue: 5, decimals: 0, caption: "AR · BR · FI · UK · US" },
 ];
 
 const stagger = { visible: { transition: { staggerChildren: 0.08 } } };
