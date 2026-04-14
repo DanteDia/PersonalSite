@@ -13,9 +13,9 @@ export default function TechnicalShowcase() {
     { text: '  big-pdf-converter            <span class="pulse-dot">●</span> online  Streamlit · Datalab OCR', type: "output" as const, delay: 300 },
     { text: '  zoho-looker-pipeline         <span class="pulse-dot">●</span> online  Zapier · Google Sheets · Looker', type: "output" as const, delay: 300 },
     { text: '  powerbi-cartographer         ○ local   Python · pbixray · duckdb', type: "output" as const, delay: 300 },
-    { text: '  openclaw                     <span class="spin-dot">◐</span> building  Claude SDK · MCP · agents', type: "output" as const, delay: 400 },
+    { text: '  personal-agents              <span class="pulse-dot">●</span> online  OpenClaw · Claude SDK · MCP', type: "output" as const, delay: 400 },
     { text: "", type: "output" as const, delay: 200 },
-    { text: "  6 products · 4 online · 1 local · 1 building", type: "comment" as const, delay: 500 },
+    { text: "  6 products · 5 online · 1 local", type: "comment" as const, delay: 500 },
     { text: "  last deploy: industriesverified.com — 2h ago", type: "comment" as const, delay: 400 },
   ];
 
