@@ -106,7 +106,7 @@ export default function WebEvolution() {
           />
         </h2>
 
-        <div style={{ position: "relative", paddingLeft: "2rem" }}>
+        <div className="timeline-root" style={{ position: "relative", paddingLeft: "2rem" }}>
           {/* Vertical timeline line */}
           <div
             style={{
@@ -136,6 +136,7 @@ export default function WebEvolution() {
               >
                 {/* Timeline dot */}
                 <div
+                  className="timeline-dot"
                   style={{
                     position: "absolute",
                     left: "-1.75rem",
@@ -222,6 +223,7 @@ export default function WebEvolution() {
                   {hasDetails && (
                     <>
                       <button
+                        className="expand-button"
                         onClick={() => setExpanded(isExpanded ? null : index)}
                         style={{
                           display: "inline-flex",

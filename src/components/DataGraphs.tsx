@@ -221,6 +221,7 @@ export default function DataGraphs() {
         </motion.p>
 
         <motion.div
+          className="responsive-grid-cards"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-30px" }}

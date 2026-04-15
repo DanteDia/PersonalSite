@@ -35,6 +35,7 @@ export default function Hero() {
 
   return (
     <header
+      className="hero-root"
       style={{
         position: "relative",
         minHeight: "100vh",
@@ -42,7 +43,7 @@ export default function Hero() {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        padding: "6rem 1.5rem 4rem",
+        padding: "clamp(4rem, 12vh, 6rem) 1.5rem clamp(2rem, 8vh, 4rem)",
         overflow: "hidden",
       }}
     >
@@ -79,6 +80,7 @@ export default function Hero() {
         </h1>
 
         <div
+          className="hero-typewriter-container"
           style={{
             fontFamily: "var(--font-mono)",
             fontSize: "1rem",
@@ -96,6 +98,7 @@ export default function Hero() {
         >
           <span style={{ color: "var(--machine-active)", flexShrink: 0 }}>&gt;</span>
           <span
+            className="hero-typewriter"
             style={{
               fontStyle: "italic",
               color: "var(--text-secondary)",

@@ -163,3 +163,150 @@ body::before {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+/* ============================================================
+   MOBILE RESPONSIVENESS
+   ============================================================
+   NOTE: Most components in this site use inline styles, which have
+   higher CSS specificity than external rules. When we need to
+   override inline styles on mobile, we use !important as a deliberate
+   tradeoff. Treat this block as the single source of truth for
+   mobile behavior; if you change an inline style in a component,
+   check here too.
+
+   Breakpoints:
+   - @media (max-width: 600px) — phones (tightest: 360–393px)
+   - @media (max-width: 480px) — small phones (aggressive fallback)
+   ============================================================ */
+
+/* ---------- Global mobile tweaks ---------- */
+@media (max-width: 600px) {
+  body {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
+/* ---------- Navigation hamburger ---------- */
+/* The desktop nav is hidden below 600px; the hamburger takes over. */
+.nav-desktop-links {
+  display: flex !important;
+}
+.nav-hamburger-button {
+  display: none !important;
+}
+@media (max-width: 600px) {
+  .nav-desktop-links {
+    display: none !important;
+  }
+  .nav-hamburger-button {
+    display: inline-flex !important;
+  }
+}
+
+/* Mobile dropdown panel: give links room to breathe + tap feedback */
+.nav-mobile-link {
+  padding: 0.9rem 1.5rem;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.nav-mobile-link:active,
+.nav-mobile-link:focus-visible {
+  background-color: var(--machine-base);
+  color: var(--machine-accent);
+}
+
+/* ---------- Hero ---------- */
+@media (max-width: 600px) {
+  .hero-typewriter {
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+  }
+  .hero-typewriter-container {
+    padding: 0.5rem 0.9rem !important;
+  }
+}
+
+/* ---------- Responsive card grids ----------
+   Components add className="responsive-grid-cards" to grid wrappers
+   that should collapse to single column below 480px. Above 480 the
+   inline `grid-template-columns` from the component wins. */
+@media (max-width: 480px) {
+  .responsive-grid-cards {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+}
+
+/* ---------- Section padding: scale with viewport height ---------- */
+@media (max-width: 600px) {
+  .section-padded {
+    padding-top: clamp(3rem, 8vh, 5rem) !important;
+    padding-bottom: clamp(3rem, 8vh, 5rem) !important;
+  }
+}
+
+/* ---------- Terminal: horizontal scroll ---------- */
+.terminal-body {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.terminal-body::-webkit-scrollbar {
+  height: 4px;
+}
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+}
+/* Right-edge fade hint that content is scrollable */
+.terminal-overflow-wrapper {
+  position: relative;
+}
+@media (max-width: 600px) {
+  .terminal-overflow-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(24, 24, 24, 0), rgba(24, 24, 24, 0.85));
+  }
+}
+
+/* ---------- WebEvolution timeline ---------- */
+@media (max-width: 480px) {
+  .timeline-root {
+    padding-left: 1.25rem !important;
+  }
+  .timeline-root .timeline-dot {
+    left: -1.1rem !important;
+  }
+}
+
+/* Tap feedback for the expand/collapse "details" button */
+.expand-button:active {
+  background-color: var(--machine-base) !important;
+  border-color: var(--machine-active) !important;
+}
+
+/* ---------- Blog article typography ---------- */
+@media (max-width: 480px) {
+  .article-body {
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+  .article-body h2 {
+    font-size: 1.3rem !important;
+  }
+}
+
