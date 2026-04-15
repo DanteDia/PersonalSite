@@ -85,13 +85,14 @@ export default function About() {
             technical skills
           </motion.h3>
           <motion.div
+            className="responsive-grid-cards"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-30px" }}
             variants={stagger}
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
               gap: "2rem",
             }}
           >

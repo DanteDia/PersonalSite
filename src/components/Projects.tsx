@@ -66,11 +66,12 @@ export default function Projects() {
           <span style={{ display: "block", width: "40px", height: "2px", background: "var(--machine-accent)", margin: "1rem auto 0", opacity: 0.6 }} />
         </motion.h2>
         <motion.div
+          className="responsive-grid-cards"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-30px" }}
           variants={stagger}
-          style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "2rem" }}
+          style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}
         >
           {projects.map((p) => (
             <motion.article

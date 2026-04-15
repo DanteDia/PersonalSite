@@ -108,7 +108,7 @@ export default async function BlogPostPage({
             </p>
           </header>
 
-          <div style={{ fontSize: "1.05rem", lineHeight: 1.75, color: "var(--text-secondary)" }}>
+          <div className="article-body" style={{ fontSize: "1.05rem", lineHeight: 1.75, color: "var(--text-secondary)" }}>
             {post.body.map((section, i) => (
               <section key={i} style={{ marginBottom: "2.5rem" }}>
                 <h2

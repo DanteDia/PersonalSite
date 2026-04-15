@@ -36,7 +36,7 @@ export default function Terminal({ variant = "light", title, lines, showPrompt =
   const isDark = variant === "dark";
 
   const getLineStyle = (type?: string) => {
-    const base = { fontFamily: "'JetBrains Mono', monospace", fontSize: '0.85rem', lineHeight: 1.6, margin: 0 };
+    const base = { fontFamily: "'JetBrains Mono', monospace", fontSize: '0.85rem', lineHeight: 1.6, margin: 0, whiteSpace: 'pre' as const };
     switch (type) {
       case "command":
         return { ...base, color: isDark ? '#DCDCDC' : '#1a1a1a' };
@@ -54,14 +54,17 @@ export default function Terminal({ variant = "light", title, lines, showPrompt =
   };
 
   return (
-    <div style={{
-      backgroundColor: isDark ? '#181818' : '#F3F8F5',
-      borderRadius: isDark ? '12px' : '0',
-      border: `1px solid ${isDark ? '#2a2a2a' : '#D1F5D3'}`,
-      boxShadow: isDark ? '0 10px 40px rgba(0,0,0,0.3)' : 'none',
-      overflow: 'hidden',
-      fontFamily: "'JetBrains Mono', monospace",
-    }}>
+    <div
+      className="terminal-overflow-wrapper"
+      style={{
+        backgroundColor: isDark ? '#181818' : '#F3F8F5',
+        borderRadius: isDark ? '12px' : '0',
+        border: `1px solid ${isDark ? '#2a2a2a' : '#D1F5D3'}`,
+        boxShadow: isDark ? '0 10px 40px rgba(0,0,0,0.3)' : 'none',
+        overflow: 'hidden',
+        fontFamily: "'JetBrains Mono', monospace",
+      }}
+    >
       {isDark && title && (
         <div style={{
           backgroundColor: '#1a1a1a',
@@ -77,7 +80,7 @@ export default function Terminal({ variant = "light", title, lines, showPrompt =
           <span style={{ marginLeft: 'auto', fontSize: '0.8rem', color: '#6B7280' }}>{title}</span>
         </div>
       )}
-      <div style={{ padding: isDark ? '20px' : '16px' }}>
+      <div className="terminal-body" style={{ padding: isDark ? '20px' : '16px' }}>
         {lines.slice(0, visibleLines).map((line, index) => (
           <div key={index} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
             {line.type === 'command' && showPrompt && (

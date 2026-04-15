@@ -99,13 +99,14 @@ export default function Journey() {
           Not a linear career. A series of deep dives into whatever needed figuring out.
         </motion.p>
         <motion.div
+          className="responsive-grid-cards"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
           variants={stagger}
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "1.5rem",
           }}
         >
