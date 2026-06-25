@@ -75,6 +75,8 @@ export default function MeltyRoom({
   const partDepthMatRef = useRef<any>(null);
   const planeRef = useRef<any>(null);
   const controlsRef = useRef<any>(null);
+  const camRef = useRef<any>(null);
+  const initViewRef = useRef<{ cam: number[]; target: number[] } | null>(null);
   const progRef = useRef(0);
   const brushRef = useRef<Brush>(defaultBrush);
   const overlayRef = useRef<{ x: number; y: number; scale: number }>(
@@ -96,7 +98,15 @@ export default function MeltyRoom({
     m.uniforms.uSize.value = p.size; m.uniforms.uSoft.value = p.soft; m.uniforms.uOpacity.value = p.opacity;
   }, [brush]);
 
-  const resetReveal = () => { progRef.current = 0; setProgress(0); setUnlocked(false); if (controlsRef.current) controlsRef.current.enabled = false; };
+  const resetReveal = () => {
+    progRef.current = 0; setProgress(0); setUnlocked(false);
+    const cam = camRef.current, ctr = controlsRef.current, iv = initViewRef.current;
+    if (cam && ctr && iv) { // back to the initial x,y,z, as if reloading
+      cam.position.set(iv.cam[0], iv.cam[1], iv.cam[2]);
+      ctr.target.set(iv.target[0], iv.target[1], iv.target[2]);
+      ctr.autoRotate = false; ctr.enabled = false; ctr.update();
+    }
+  };
   const saveOverlay = () => {
     setSaveMsg("guardando…");
     fetch("/api/artme/view", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ slug: "spatial-real-overlay", view: overlayRef.current }) })
@@ -122,6 +132,8 @@ export default function MeltyRoom({
     else { camera.position.set(0, 0, 3.2); controls.target.set(0, 0, 0); }
     controls.update();
     controlsRef.current = controls;
+    camRef.current = camera;
+    initViewRef.current = { cam: camera.position.toArray(), target: controls.target.toArray() };
     const camRight = new THREE.Vector3(), camUp = new THREE.Vector3();
 
     // visible-height at z=0 plane → px↔world conversion for the placer

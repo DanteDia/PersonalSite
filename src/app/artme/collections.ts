@@ -21,6 +21,7 @@ export type Room = {
   defaultBrush?: "burbujas" | "pinceladas"; // splat render style default
   brushToggle?: boolean; // show the burbujas/pinceladas render toggle (default true)
   freeformGallery?: boolean; // gallery renders the curated mesa arrangement as-is
+  staggerReveal?: boolean; // reveal one row every 2s (77 km/h)
   grid?: boolean; // uniform square grid (aligned, no gaps)
   grouped?: boolean; // group the grid by collection (uses each shot's `coll`)
   hidden?: boolean; // not shown in the entrance; reachable only by URL (easter egg)
@@ -104,14 +105,14 @@ export const ROOMS: Room[] = [
     type: "images", grid: true,
   },
   {
-    slug: "bwc", n: "10", title: "B&W&C", subtitle: "Color selectivo",
+    slug: "bwc", n: "10", title: "Black & White & Color", subtitle: "Color selectivo",
     blurb: "La cámara guarda un solo color del cuadro y manda todo el resto a blanco y negro.",
     type: "images",
   },
   {
     slug: "viento", n: "11", title: "77 km/h", subtitle: "El viento",
     blurb: "Un intento de fotografiar el viento en la naturaleza.",
-    type: "images", freeformGallery: true,
+    type: "images", freeformGallery: true, staggerReveal: true,
   },
   {
     slug: "gris", n: "12", title: "Gris", subtitle: "Soledad acompañada",

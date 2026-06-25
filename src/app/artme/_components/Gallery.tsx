@@ -23,9 +23,9 @@ function bgCrop(src: string, c: Crop): React.CSSProperties {
 }
 
 // Renders the saved curation layout (positions / sizes / crops) scaled to fit width.
-function FreeformView({ visible, items, aspectMap, onOpen }: {
+function FreeformView({ visible, items, aspectMap, onOpen, stagger = false }: {
   visible: Shot[]; items: Record<string, { x: number; y: number; w: number; z: number; crop?: Crop }>;
-  aspectMap: Record<string, number>; onOpen: (i: number) => void;
+  aspectMap: Record<string, number>; onOpen: (i: number) => void; stagger?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [w, setW] = useState(0);
@@ -40,19 +40,38 @@ function FreeformView({ visible, items, aspectMap, onOpen }: {
     const p = items[s.src]; if (!p) return null;
     const c = p.crop ?? FULL;
     const h = (p.w / c.cw) * (aspectMap[s.src] ?? 1) * c.ch;
-    return { src: s.src, idx: i, x: p.x, y: p.y, w: p.w, h, c };
-  }).filter(Boolean) as { src: string; idx: number; x: number; y: number; w: number; h: number; c: Crop }[];
+    return { src: s.src, idx: i, x: p.x, y: p.y, w: p.w, h, c, z: p.z ?? 0 };
+  }).filter(Boolean) as { src: string; idx: number; x: number; y: number; w: number; h: number; c: Crop; z: number }[];
 
   let bw = 1, bh = 1;
   placed.forEach((it) => { bw = Math.max(bw, it.x + it.w); bh = Math.max(bh, it.y + it.h); });
   bw += 60; bh += 60;
   const scale = w ? w / bw : 0;
 
+  // staggered reveal (77 km/h): rows appear one every 2s, presented little by little
+  const rowOf = useMemo(() => {
+    const map: Record<string, number> = {}; if (!stagger) return map;
+    let row = 0, prevY: number | null = null;
+    [...placed].sort((a, b) => a.y - b.y).forEach((it) => {
+      if (prevY === null || it.y - prevY > 60) row++;
+      prevY = it.y; map[it.src] = row;
+    });
+    return map;
+  }, [stagger, placed]);
+  const maxRow = stagger ? Math.max(0, ...Object.values(rowOf)) : 0;
+  const [shownRows, setShownRows] = useState(stagger ? 0 : Infinity);
+  useEffect(() => {
+    if (!stagger || !maxRow) return;
+    setShownRows(1);
+    const id = setInterval(() => setShownRows((r) => { if (r >= maxRow) { clearInterval(id); return r; } return r + 1; }), 2000);
+    return () => clearInterval(id);
+  }, [stagger, maxRow]);
+
   return (
     <div ref={ref} style={{ width: "100%", position: "relative", height: bh * scale }}>
       <div style={{ position: "absolute", top: 0, left: 0, width: bw, height: bh, transform: `scale(${scale})`, transformOrigin: "top left" }}>
         {placed.map((it) => (
-          <button key={it.src} onClick={() => onOpen(it.idx)} style={{ position: "absolute", left: it.x, top: it.y, width: it.w, height: it.h, padding: 0, border: "none", background: "#141416", cursor: "zoom-in", overflow: "hidden" }}>
+          <button key={it.src} onClick={() => onOpen(it.idx)} style={{ position: "absolute", left: it.x, top: it.y, width: it.w, height: it.h, zIndex: it.z, padding: 0, border: "none", background: "#141416", cursor: "zoom-in", overflow: "hidden", opacity: stagger && rowOf[it.src] > shownRows ? 0 : 1, transform: stagger && rowOf[it.src] > shownRows ? "translateY(12px)" : "none", transition: "opacity 0.9s ease, transform 0.9s ease" }}>
             <div style={{ width: "100%", height: "100%", ...bgCrop(it.src, it.c) }} />
           </button>
         ))}
@@ -79,8 +98,8 @@ function GridView({ shots, baseIndex, onOpen }: { shots: Shot[]; baseIndex: numb
 }
 
 export default function Gallery({
-  slug, n, title, subtitle, blurb, shots, freeform = false, grid = false, grouped = false,
-}: { slug: string; n: string; title: string; subtitle: string; blurb: string; shots: Shot[]; freeform?: boolean; grid?: boolean; grouped?: boolean }) {
+  slug, n, title, subtitle, blurb, shots, freeform = false, grid = false, grouped = false, staggerReveal = false,
+}: { slug: string; n: string; title: string; subtitle: string; blurb: string; shots: Shot[]; freeform?: boolean; grid?: boolean; grouped?: boolean; staggerReveal?: boolean }) {
   const layout = useMemo(() => getLayout(slug), [slug]);
   const deleted = useMemo(() => new Set(layout.deleted ?? []), [layout]);
   const visible = useMemo(() => shots.filter((s) => !deleted.has(s.src)), [shots, deleted]);
@@ -146,7 +165,7 @@ export default function Gallery({
 
       {/* the gallery mirrors your mesa de curaduría arrangement when you've laid one out */}
       {mode === "galeria" && visible.length > 0 && hasLayout && (
-        <FreeformView visible={visible} items={layout.items!} aspectMap={aspectMap} onOpen={(i) => setOpen(i)} />
+        <FreeformView visible={visible} items={layout.items!} aspectMap={aspectMap} onOpen={(i) => setOpen(i)} stagger={staggerReveal} />
       )}
 
       {/* uniform grid mode (aligned, symmetric, no gaps) */}
