@@ -1,0 +1,1370 @@
+{
+  "ceramica": {
+    "deleted": [
+      "/artme/ceramica/ceramica-001.jpg",
+      "/artme/ceramica/ceramica-002.jpg",
+      "/artme/ceramica/ceramica-003.jpg",
+      "/artme/ceramica/ceramica-004.jpg",
+      "/artme/ceramica/ceramica-005.jpg",
+      "/artme/ceramica/ceramica-006.jpg",
+      "/artme/ceramica/ceramica-007.jpg",
+      "/artme/ceramica/ceramica-008.jpg",
+      "/artme/ceramica/ceramica-009.jpg",
+      "/artme/ceramica/ceramica-010.jpg",
+      "/artme/ceramica/ceramica-011.jpg",
+      "/artme/ceramica/ceramica-012.jpg",
+      "/artme/ceramica/ceramica-013.jpg",
+      "/artme/ceramica/ceramica-014.jpg",
+      "/artme/ceramica/ceramica-015.jpg",
+      "/artme/ceramica/ceramica-016.jpg",
+      "/artme/ceramica/ceramica-017.jpg",
+      "/artme/ceramica/ceramica-018.jpg",
+      "/artme/ceramica/ceramica-019.jpg",
+      "/artme/ceramica/ceramica-020.jpg",
+      "/artme/ceramica/ceramica-021.jpg",
+      "/artme/ceramica/ceramica-022.jpg",
+      "/artme/ceramica/ceramica-023.jpg",
+      "/artme/ceramica/ceramica-024.jpg",
+      "/artme/ceramica/ceramica-039.jpg",
+      "/artme/ceramica/ceramica-040.jpg",
+      "/artme/ceramica/ceramica-041.jpg",
+      "/artme/ceramica/ceramica-042.jpg",
+      "/artme/ceramica/ceramica-043.jpg",
+      "/artme/ceramica/ceramica-044.jpg",
+      "/artme/ceramica/ceramica-045.jpg",
+      "/artme/ceramica/ceramica-046.jpg",
+      "/artme/ceramica/ceramica-049.jpg",
+      "/artme/ceramica/ceramica-050.jpg",
+      "/artme/ceramica/ceramica-055.jpg",
+      "/artme/ceramica/ceramica-054.jpg",
+      "/artme/ceramica/ceramica-053.jpg",
+      "/artme/ceramica/ceramica-051.jpg",
+      "/artme/ceramica/ceramica-057.jpg",
+      "/artme/ceramica/ceramica-058.jpg",
+      "/artme/ceramica/ceramica-071.jpg",
+      "/artme/ceramica/ceramica-072.jpg"
+    ],
+    "items": {
+      "/artme/ceramica/ceramica-025.jpg": {
+        "x": 1180,
+        "y": 1100,
+        "w": 240,
+        "z": 25
+      },
+      "/artme/ceramica/ceramica-026.jpg": {
+        "x": 60,
+        "y": 1360,
+        "w": 240,
+        "z": 26
+      },
+      "/artme/ceramica/ceramica-027.jpg": {
+        "x": 340,
+        "y": 1360,
+        "w": 240,
+        "z": 27
+      },
+      "/artme/ceramica/ceramica-028.jpg": {
+        "x": 620,
+        "y": 1360,
+        "w": 240,
+        "z": 28
+      },
+      "/artme/ceramica/ceramica-029.jpg": {
+        "x": 900,
+        "y": 1360,
+        "w": 240,
+        "z": 29
+      },
+      "/artme/ceramica/ceramica-030.jpg": {
+        "x": 1180,
+        "y": 1360,
+        "w": 240,
+        "z": 30
+      },
+      "/artme/ceramica/ceramica-031.jpg": {
+        "x": 60,
+        "y": 1620,
+        "w": 240,
+        "z": 31
+      },
+      "/artme/ceramica/ceramica-032.jpg": {
+        "x": 340,
+        "y": 1620,
+        "w": 240,
+        "z": 32
+      },
+      "/artme/ceramica/ceramica-033.jpg": {
+        "x": 620,
+        "y": 1620,
+        "w": 240,
+        "z": 33
+      },
+      "/artme/ceramica/ceramica-034.jpg": {
+        "x": 900,
+        "y": 1620,
+        "w": 240,
+        "z": 34
+      },
+      "/artme/ceramica/ceramica-035.jpg": {
+        "x": 1180,
+        "y": 1620,
+        "w": 240,
+        "z": 35
+      },
+      "/artme/ceramica/ceramica-036.jpg": {
+        "x": 60,
+        "y": 1880,
+        "w": 240,
+        "z": 36
+      },
+      "/artme/ceramica/ceramica-037.jpg": {
+        "x": 340,
+        "y": 1880,
+        "w": 240,
+        "z": 37
+      },
+      "/artme/ceramica/ceramica-038.jpg": {
+        "x": 620,
+        "y": 1880,
+        "w": 240,
+        "z": 38
+      },
+      "/artme/ceramica/ceramica-047.jpg": {
+        "x": 340,
+        "y": 2400,
+        "w": 240,
+        "z": 47
+      },
+      "/artme/ceramica/ceramica-048.jpg": {
+        "x": 620,
+        "y": 2400,
+        "w": 240,
+        "z": 48
+      },
+      "/artme/ceramica/ceramica-052.jpg": {
+        "x": 340,
+        "y": 2660,
+        "w": 240,
+        "z": 77
+      },
+      "/artme/ceramica/ceramica-056.jpg": {
+        "x": 60,
+        "y": 2920,
+        "w": 240,
+        "z": 56
+      },
+      "/artme/ceramica/ceramica-059.jpg": {
+        "x": 900,
+        "y": 2920,
+        "w": 240,
+        "z": 59
+      },
+      "/artme/ceramica/ceramica-060.jpg": {
+        "x": 1180,
+        "y": 2920,
+        "w": 240,
+        "z": 60
+      },
+      "/artme/ceramica/ceramica-061.jpg": {
+        "x": 60,
+        "y": 3180,
+        "w": 240,
+        "z": 61
+      },
+      "/artme/ceramica/ceramica-062.jpg": {
+        "x": 340,
+        "y": 3180,
+        "w": 240,
+        "z": 62
+      },
+      "/artme/ceramica/ceramica-063.jpg": {
+        "x": 620,
+        "y": 3180,
+        "w": 240,
+        "z": 63
+      },
+      "/artme/ceramica/ceramica-064.jpg": {
+        "x": 900,
+        "y": 3180,
+        "w": 240,
+        "z": 64
+      },
+      "/artme/ceramica/ceramica-065.jpg": {
+        "x": 1180,
+        "y": 3180,
+        "w": 240,
+        "z": 65
+      },
+      "/artme/ceramica/ceramica-066.jpg": {
+        "x": 60,
+        "y": 3440,
+        "w": 240,
+        "z": 66
+      },
+      "/artme/ceramica/ceramica-067.jpg": {
+        "x": 340,
+        "y": 3440,
+        "w": 240,
+        "z": 67
+      },
+      "/artme/ceramica/ceramica-068.jpg": {
+        "x": 620,
+        "y": 3440,
+        "w": 240,
+        "z": 68
+      },
+      "/artme/ceramica/ceramica-069.jpg": {
+        "x": 900,
+        "y": 3440,
+        "w": 240,
+        "z": 69
+      },
+      "/artme/ceramica/ceramica-070.jpg": {
+        "x": 1180,
+        "y": 3440,
+        "w": 240,
+        "z": 70
+      },
+      "/artme/ceramica/ceramica-073.jpg": {
+        "x": 620,
+        "y": 3700,
+        "w": 240,
+        "z": 73
+      },
+      "/artme/ceramica/ceramica-074.jpg": {
+        "x": 900,
+        "y": 3700,
+        "w": 240,
+        "z": 74
+      },
+      "/artme/ceramica/ceramica-075.jpg": {
+        "x": 1180,
+        "y": 3700,
+        "w": 240,
+        "z": 75
+      },
+      "/artme/ceramica/ceramica-076.jpg": {
+        "x": 60,
+        "y": 3960,
+        "w": 240,
+        "z": 76
+      }
+    }
+  },
+  "mesa": {
+    "deleted": [
+      "/artme/mesa/mesa-002.jpg",
+      "/artme/mesa/mesa-001.jpg",
+      "/artme/mesa/mesa-030.jpg",
+      "/artme/mesa/mesa-027.jpg",
+      "/artme/mesa/mesa-028.jpg",
+      "/artme/mesa/mesa-032.jpg",
+      "/artme/mesa/mesa-035.jpg",
+      "/artme/mesa/mesa-036.jpg",
+      "/artme/mesa/mesa-039.jpg",
+      "/artme/mesa/mesa-045.jpg",
+      "/artme/mesa/mesa-043.jpg",
+      "/artme/mesa/mesa-042.jpg",
+      "/artme/mesa/mesa-041.jpg",
+      "/artme/mesa/mesa-046.jpg",
+      "/artme/mesa/mesa-044.jpg",
+      "/artme/mesa/mesa-047.jpg",
+      "/artme/mesa/mesa-031.jpg",
+      "/artme/mesa/mesa-052.jpg"
+    ],
+    "items": {
+      "/artme/mesa/mesa-003.jpg": {
+        "x": 1327,
+        "y": 2358,
+        "w": 240,
+        "z": 156
+      },
+      "/artme/mesa/mesa-004.jpg": {
+        "x": 1530,
+        "y": 736,
+        "w": 240,
+        "z": 97
+      },
+      "/artme/mesa/mesa-005.jpg": {
+        "x": 907,
+        "y": 847,
+        "w": 240,
+        "z": 92
+      },
+      "/artme/mesa/mesa-006.jpg": {
+        "x": 60,
+        "y": 320,
+        "w": 240,
+        "z": 6
+      },
+      "/artme/mesa/mesa-007.jpg": {
+        "x": 340,
+        "y": 320,
+        "w": 240,
+        "z": 7
+      },
+      "/artme/mesa/mesa-008.jpg": {
+        "x": 344,
+        "y": 844,
+        "w": 240,
+        "z": 80
+      },
+      "/artme/mesa/mesa-009.jpg": {
+        "x": 896,
+        "y": 321,
+        "w": 240,
+        "z": 75
+      },
+      "/artme/mesa/mesa-010.jpg": {
+        "x": 1181,
+        "y": 323,
+        "w": 240,
+        "z": 74
+      },
+      "/artme/mesa/mesa-011.jpg": {
+        "x": 60,
+        "y": 580,
+        "w": 240,
+        "z": 11
+      },
+      "/artme/mesa/mesa-012.jpg": {
+        "x": 340,
+        "y": 580,
+        "w": 240,
+        "z": 12
+      },
+      "/artme/mesa/mesa-013.jpg": {
+        "x": 617,
+        "y": 324,
+        "w": 240,
+        "z": 76
+      },
+      "/artme/mesa/mesa-014.jpg": {
+        "x": 1183,
+        "y": 581,
+        "w": 240,
+        "z": 78
+      },
+      "/artme/mesa/mesa-015.jpg": {
+        "x": 620,
+        "y": 581,
+        "w": 240,
+        "z": 77
+      },
+      "/artme/mesa/mesa-016.jpg": {
+        "x": 60,
+        "y": 840,
+        "w": 240,
+        "z": 16
+      },
+      "/artme/mesa/mesa-017.jpg": {
+        "x": 1506,
+        "y": 729,
+        "w": 240,
+        "z": 83
+      },
+      "/artme/mesa/mesa-018.jpg": {
+        "x": 1554,
+        "y": 754,
+        "w": 240,
+        "z": 98
+      },
+      "/artme/mesa/mesa-019.jpg": {
+        "x": 898,
+        "y": 585,
+        "w": 240,
+        "z": 79
+      },
+      "/artme/mesa/mesa-020.jpg": {
+        "x": 1180,
+        "y": 840,
+        "w": 240,
+        "z": 20
+      },
+      "/artme/mesa/mesa-021.jpg": {
+        "x": 626,
+        "y": 859,
+        "w": 240,
+        "z": 85
+      },
+      "/artme/mesa/mesa-022.jpg": {
+        "x": 1580,
+        "y": 774,
+        "w": 240,
+        "z": 101
+      },
+      "/artme/mesa/mesa-023.jpg": {
+        "x": 630,
+        "y": 1092,
+        "w": 240,
+        "z": 86
+      },
+      "/artme/mesa/mesa-024.jpg": {
+        "x": 60,
+        "y": 1074,
+        "w": 243,
+        "z": 87
+      },
+      "/artme/mesa/mesa-025.jpg": {
+        "x": 1187,
+        "y": 1091,
+        "w": 232,
+        "z": 88
+      },
+      "/artme/mesa/mesa-026.jpg": {
+        "x": 1097,
+        "y": 1891,
+        "w": 240,
+        "z": 153
+      },
+      "/artme/mesa/mesa-029.jpg": {
+        "x": 62,
+        "y": 1606,
+        "w": 240,
+        "z": 119
+      },
+      "/artme/mesa/mesa-033.jpg": {
+        "x": 101,
+        "y": 1795,
+        "w": 240,
+        "z": 130
+      },
+      "/artme/mesa/mesa-034.jpg": {
+        "x": 151,
+        "y": 1981,
+        "w": 240,
+        "z": 131
+      },
+      "/artme/mesa/mesa-037.jpg": {
+        "x": 306,
+        "y": 2307,
+        "w": 240,
+        "z": 134
+      },
+      "/artme/mesa/mesa-038.jpg": {
+        "x": 483,
+        "y": 1587,
+        "w": 240,
+        "z": 137
+      },
+      "/artme/mesa/mesa-040.jpg": {
+        "x": 649,
+        "y": 1860,
+        "w": 240,
+        "z": 138
+      },
+      "/artme/mesa/mesa-048.jpg": {
+        "x": 771,
+        "y": 2147,
+        "w": 240,
+        "z": 139
+      },
+      "/artme/mesa/mesa-049.jpg": {
+        "x": 1237,
+        "y": 2216,
+        "w": 240,
+        "z": 155
+      },
+      "/artme/mesa/mesa-050.jpg": {
+        "x": 1175,
+        "y": 2060,
+        "w": 240,
+        "z": 154
+      },
+      "/artme/mesa/mesa-051.jpg": {
+        "x": 846,
+        "y": 2273,
+        "w": 240,
+        "z": 148
+      },
+      "/artme/mesa/mesa-053.jpg": {
+        "x": 955,
+        "y": 2477,
+        "w": 240,
+        "z": 150
+      },
+      "/artme/mesa/mesa-054.jpg": {
+        "x": 993,
+        "y": 1626,
+        "w": 240,
+        "z": 144
+      }
+    }
+  },
+  "banos": {
+    "deleted": [
+      "/artme/banos/banos-001.jpg",
+      "/artme/banos/banos-002.jpg",
+      "/artme/banos/banos-018.jpg",
+      "/artme/banos/banos-020.jpg",
+      "/artme/banos/banos-022.jpg",
+      "/artme/banos/banos-024.jpg",
+      "/artme/banos/banos-038.jpg",
+      "/artme/banos/banos-050.jpg",
+      "/artme/banos/banos-057.jpg",
+      "/artme/banos/banos-063.jpg",
+      "/artme/banos/banos-068.jpg",
+      "/artme/banos/banos-069.jpg",
+      "/artme/banos/banos-070.jpg",
+      "/artme/banos/banos-071.jpg",
+      "/artme/banos/banos-066.jpg",
+      "/artme/banos/banos-072.jpg",
+      "/artme/banos/banos-073.jpg",
+      "/artme/banos/banos-074.jpg",
+      "/artme/banos/banos-075.jpg",
+      "/artme/banos/banos-077.jpg",
+      "/artme/banos/banos-076.jpg",
+      "/artme/banos/banos-021.jpg"
+    ],
+    "items": {}
+  },
+  "momento-obscuro": {
+    "deleted": [
+      "/artme/momento-obscuro/momento-obscuro-054.jpg",
+      "/artme/momento-obscuro/momento-obscuro-039.jpg",
+      "/artme/momento-obscuro/momento-obscuro-031.jpg",
+      "/artme/momento-obscuro/momento-obscuro-032.jpg",
+      "/artme/momento-obscuro/momento-obscuro-064.jpg",
+      "/artme/momento-obscuro/momento-obscuro-025.jpg",
+      "/artme/momento-obscuro/momento-obscuro-033.jpg",
+      "/artme/momento-obscuro/momento-obscuro-065.jpg",
+      "/artme/momento-obscuro/momento-obscuro-069.jpg",
+      "/artme/momento-obscuro/momento-obscuro-017.jpg",
+      "/artme/momento-obscuro/momento-obscuro-019.jpg",
+      "/artme/momento-obscuro/momento-obscuro-006.jpg",
+      "/artme/momento-obscuro/momento-obscuro-001.jpg",
+      "/artme/momento-obscuro/momento-obscuro-080.jpg",
+      "/artme/momento-obscuro/momento-obscuro-024.jpg",
+      "/artme/momento-obscuro/momento-obscuro-074.jpg",
+      "/artme/momento-obscuro/momento-obscuro-005.jpg",
+      "/artme/momento-obscuro/momento-obscuro-015.jpg",
+      "/artme/momento-obscuro/momento-obscuro-009.jpg",
+      "/artme/momento-obscuro/momento-obscuro-014.jpg",
+      "/artme/momento-obscuro/momento-obscuro-002.jpg",
+      "/artme/momento-obscuro/momento-obscuro-016.jpg",
+      "/artme/momento-obscuro/momento-obscuro-004.jpg"
+    ],
+    "items": {
+      "/artme/momento-obscuro/momento-obscuro-003.jpg": {
+        "x": 767,
+        "y": 3269,
+        "w": 240,
+        "z": 245
+      },
+      "/artme/momento-obscuro/momento-obscuro-007.jpg": {
+        "x": 1068,
+        "y": 4089,
+        "w": 240,
+        "z": 387
+      },
+      "/artme/momento-obscuro/momento-obscuro-008.jpg": {
+        "x": 1075,
+        "y": 1017,
+        "w": 240,
+        "z": 413
+      },
+      "/artme/momento-obscuro/momento-obscuro-010.jpg": {
+        "x": 801,
+        "y": 5003,
+        "w": 240,
+        "z": 374,
+        "crop": {
+          "cx": 0,
+          "cy": 0,
+          "cw": 1,
+          "ch": 0.8668115312149726
+        }
+      },
+      "/artme/momento-obscuro/momento-obscuro-011.jpg": {
+        "x": 500,
+        "y": 2953,
+        "w": 240,
+        "z": 252
+      },
+      "/artme/momento-obscuro/momento-obscuro-012.jpg": {
+        "x": 575,
+        "y": 994,
+        "w": 240,
+        "z": 416
+      },
+      "/artme/momento-obscuro/momento-obscuro-013.jpg": {
+        "x": 878,
+        "y": 1286,
+        "w": 240,
+        "z": 235
+      },
+      "/artme/momento-obscuro/momento-obscuro-018.jpg": {
+        "x": 1333,
+        "y": 2758,
+        "w": 240,
+        "z": 250
+      },
+      "/artme/momento-obscuro/momento-obscuro-020.jpg": {
+        "x": 789,
+        "y": 809,
+        "w": 341,
+        "z": 315
+      },
+      "/artme/momento-obscuro/momento-obscuro-021.jpg": {
+        "x": 730,
+        "y": 5320,
+        "w": 371,
+        "z": 373
+      },
+      "/artme/momento-obscuro/momento-obscuro-022.jpg": {
+        "x": 612,
+        "y": 1614,
+        "w": 240,
+        "z": 338
+      },
+      "/artme/momento-obscuro/momento-obscuro-023.jpg": {
+        "x": 1037,
+        "y": 1617,
+        "w": 240,
+        "z": 337
+      },
+      "/artme/momento-obscuro/momento-obscuro-026.jpg": {
+        "x": 183,
+        "y": 2747,
+        "w": 240,
+        "z": 241
+      },
+      "/artme/momento-obscuro/momento-obscuro-027.jpg": {
+        "x": 425,
+        "y": 1546,
+        "w": 240,
+        "z": 298
+      },
+      "/artme/momento-obscuro/momento-obscuro-028.jpg": {
+        "x": 1225,
+        "y": 1538,
+        "w": 240,
+        "z": 300
+      },
+      "/artme/momento-obscuro/momento-obscuro-029.jpg": {
+        "x": 834,
+        "y": 1536,
+        "w": 240,
+        "z": 299
+      },
+      "/artme/momento-obscuro/momento-obscuro-030.jpg": {
+        "x": 840,
+        "y": 974,
+        "w": 240,
+        "z": 308
+      },
+      "/artme/momento-obscuro/momento-obscuro-034.jpg": {
+        "x": 1193,
+        "y": 2743,
+        "w": 240,
+        "z": 117
+      },
+      "/artme/momento-obscuro/momento-obscuro-035.jpg": {
+        "x": 1471,
+        "y": 2730,
+        "w": 240,
+        "z": 120
+      },
+      "/artme/momento-obscuro/momento-obscuro-036.jpg": {
+        "x": 52,
+        "y": 2722,
+        "w": 240,
+        "z": 107
+      },
+      "/artme/momento-obscuro/momento-obscuro-037.jpg": {
+        "x": 328,
+        "y": 2726,
+        "w": 240,
+        "z": 113
+      },
+      "/artme/momento-obscuro/momento-obscuro-038.jpg": {
+        "x": 675,
+        "y": 2744,
+        "w": 428,
+        "z": 124
+      },
+      "/artme/momento-obscuro/momento-obscuro-040.jpg": {
+        "x": 896,
+        "y": 2024,
+        "w": 240,
+        "z": 410
+      },
+      "/artme/momento-obscuro/momento-obscuro-041.jpg": {
+        "x": 627,
+        "y": 2029,
+        "w": 240,
+        "z": 409
+      },
+      "/artme/momento-obscuro/momento-obscuro-042.jpg": {
+        "x": 64,
+        "y": 1973,
+        "w": 240,
+        "z": 405
+      },
+      "/artme/momento-obscuro/momento-obscuro-043.jpg": {
+        "x": 345,
+        "y": 1972,
+        "w": 240,
+        "z": 408
+      },
+      "/artme/momento-obscuro/momento-obscuro-044.jpg": {
+        "x": 1192,
+        "y": 1965,
+        "w": 240,
+        "z": 97
+      },
+      "/artme/momento-obscuro/momento-obscuro-045.jpg": {
+        "x": 1467,
+        "y": 1972,
+        "w": 240,
+        "z": 95
+      },
+      "/artme/momento-obscuro/momento-obscuro-046.jpg": {
+        "x": 60,
+        "y": 2400,
+        "w": 240,
+        "z": 46
+      },
+      "/artme/momento-obscuro/momento-obscuro-047.jpg": {
+        "x": 340,
+        "y": 2400,
+        "w": 240,
+        "z": 47
+      },
+      "/artme/momento-obscuro/momento-obscuro-048.jpg": {
+        "x": 1468,
+        "y": 2404,
+        "w": 240,
+        "z": 90
+      },
+      "/artme/momento-obscuro/momento-obscuro-049.jpg": {
+        "x": 1185,
+        "y": 2405,
+        "w": 240,
+        "z": 93
+      },
+      "/artme/momento-obscuro/momento-obscuro-050.jpg": {
+        "x": 629,
+        "y": 2403,
+        "w": 240,
+        "z": 92
+      },
+      "/artme/momento-obscuro/momento-obscuro-051.jpg": {
+        "x": 896,
+        "y": 2404,
+        "w": 240,
+        "z": 94
+      },
+      "/artme/momento-obscuro/momento-obscuro-052.jpg": {
+        "x": 1725,
+        "y": 3957,
+        "w": 184,
+        "z": 393
+      },
+      "/artme/momento-obscuro/momento-obscuro-053.jpg": {
+        "x": 1057,
+        "y": 3040,
+        "w": 240,
+        "z": 258
+      },
+      "/artme/momento-obscuro/momento-obscuro-055.jpg": {
+        "x": 508,
+        "y": 4128,
+        "w": 240,
+        "z": 265
+      },
+      "/artme/momento-obscuro/momento-obscuro-056.jpg": {
+        "x": 60,
+        "y": 2920,
+        "w": 240,
+        "z": 56
+      },
+      "/artme/momento-obscuro/momento-obscuro-057.jpg": {
+        "x": 72,
+        "y": 4018,
+        "w": 240,
+        "z": 390
+      },
+      "/artme/momento-obscuro/momento-obscuro-058.jpg": {
+        "x": 771,
+        "y": 3787,
+        "w": 240,
+        "z": 247
+      },
+      "/artme/momento-obscuro/momento-obscuro-059.jpg": {
+        "x": 327,
+        "y": 3071,
+        "w": 240,
+        "z": 141
+      },
+      "/artme/momento-obscuro/momento-obscuro-060.jpg": {
+        "x": 1198,
+        "y": 3090,
+        "w": 240,
+        "z": 139
+      },
+      "/artme/momento-obscuro/momento-obscuro-061.jpg": {
+        "x": 57,
+        "y": 3084,
+        "w": 240,
+        "z": 127
+      },
+      "/artme/momento-obscuro/momento-obscuro-062.jpg": {
+        "x": 1475,
+        "y": 3084,
+        "w": 240,
+        "z": 146
+      },
+      "/artme/momento-obscuro/momento-obscuro-063.jpg": {
+        "x": 765,
+        "y": 3073,
+        "w": 240,
+        "z": 134
+      },
+      "/artme/momento-obscuro/momento-obscuro-066.jpg": {
+        "x": 60,
+        "y": 3440,
+        "w": 240,
+        "z": 66
+      },
+      "/artme/momento-obscuro/momento-obscuro-067.jpg": {
+        "x": 783,
+        "y": 4680,
+        "w": 240,
+        "z": 363
+      },
+      "/artme/momento-obscuro/momento-obscuro-068.jpg": {
+        "x": 1481,
+        "y": 3420,
+        "w": 240,
+        "z": 152
+      },
+      "/artme/momento-obscuro/momento-obscuro-070.jpg": {
+        "x": 1330,
+        "y": 3780,
+        "w": 240,
+        "z": 290
+      },
+      "/artme/momento-obscuro/momento-obscuro-071.jpg": {
+        "x": 451,
+        "y": 3430,
+        "w": 240,
+        "z": 163
+      },
+      "/artme/momento-obscuro/momento-obscuro-072.jpg": {
+        "x": 773,
+        "y": 3539,
+        "w": 240,
+        "z": 246
+      },
+      "/artme/momento-obscuro/momento-obscuro-073.jpg": {
+        "x": 1105,
+        "y": 3434,
+        "w": 240,
+        "z": 161
+      },
+      "/artme/momento-obscuro/momento-obscuro-075.jpg": {
+        "x": 1112,
+        "y": 3781,
+        "w": 240,
+        "z": 174
+      },
+      "/artme/momento-obscuro/momento-obscuro-076.jpg": {
+        "x": 169,
+        "y": 3651,
+        "w": 240,
+        "z": 283
+      },
+      "/artme/momento-obscuro/momento-obscuro-077.jpg": {
+        "x": 420,
+        "y": 3774,
+        "w": 240,
+        "z": 173
+      },
+      "/artme/momento-obscuro/momento-obscuro-078.jpg": {
+        "x": 708,
+        "y": 4464,
+        "w": 397,
+        "z": 386
+      },
+      "/artme/momento-obscuro/momento-obscuro-079.jpg": {
+        "x": 786,
+        "y": 4125,
+        "w": 240,
+        "z": 177
+      }
+    }
+  },
+  "gris": {
+    "deleted": [
+      "/artme/gris/gris-010.jpg"
+    ],
+    "items": {
+      "/artme/gris/gris-001.jpg": {
+        "x": 26,
+        "y": 29,
+        "w": 240,
+        "z": 12
+      },
+      "/artme/gris/gris-002.jpg": {
+        "x": 137,
+        "y": 114,
+        "w": 240,
+        "z": 16
+      },
+      "/artme/gris/gris-003.jpg": {
+        "x": 372,
+        "y": 281,
+        "w": 240,
+        "z": 22
+      },
+      "/artme/gris/gris-004.jpg": {
+        "x": 249,
+        "y": 208,
+        "w": 240,
+        "z": 21
+      },
+      "/artme/gris/gris-005.jpg": {
+        "x": 560,
+        "y": 469,
+        "w": 240,
+        "z": 33
+      },
+      "/artme/gris/gris-006.jpg": {
+        "x": 468,
+        "y": 387,
+        "w": 240,
+        "z": 32
+      },
+      "/artme/gris/gris-007.jpg": {
+        "x": 881,
+        "y": 726,
+        "w": 240,
+        "z": 40
+      },
+      "/artme/gris/gris-008.jpg": {
+        "x": 1008,
+        "y": 801,
+        "w": 240,
+        "z": 41
+      },
+      "/artme/gris/gris-009.jpg": {
+        "x": 720,
+        "y": 642,
+        "w": 240,
+        "z": 39
+      },
+      "/artme/gris/gris-011.jpg": {
+        "x": 646,
+        "y": 562,
+        "w": 240,
+        "z": 38
+      }
+    }
+  },
+  "faro": {
+    "deleted": [
+      "/artme/faro/faro-001.jpg"
+    ],
+    "items": {
+      "/artme/faro/faro-002.jpg": {
+        "x": 648,
+        "y": 146,
+        "w": 240,
+        "z": 9
+      },
+      "/artme/faro/faro-003.jpg": {
+        "x": 79,
+        "y": 140,
+        "w": 240,
+        "z": 15
+      },
+      "/artme/faro/faro-004.jpg": {
+        "x": 368,
+        "y": 145,
+        "w": 240,
+        "z": 14
+      },
+      "/artme/faro/faro-005.jpg": {
+        "x": 1184,
+        "y": 149,
+        "w": 240,
+        "z": 16
+      },
+      "/artme/faro/faro-006.jpg": {
+        "x": 916,
+        "y": 149,
+        "w": 240,
+        "z": 12
+      }
+    }
+  },
+  "viento": {
+    "deleted": [
+      "/artme/viento/viento-033.jpg",
+      "/artme/viento/viento-009.jpg",
+      "/artme/viento/viento-010.jpg",
+      "/artme/viento/viento-001.jpg",
+      "/artme/viento/viento-002.jpg",
+      "/artme/viento/viento-003.jpg",
+      "/artme/viento/viento-014.jpg",
+      "/artme/viento/viento-017.jpg",
+      "/artme/viento/viento-018.jpg",
+      "/artme/viento/viento-022.jpg",
+      "/artme/viento/viento-019.jpg"
+    ],
+    "items": {
+      "/artme/viento/viento-004.jpg": {
+        "x": 62,
+        "y": 58,
+        "w": 340,
+        "z": 50
+      },
+      "/artme/viento/viento-005.jpg": {
+        "x": 63,
+        "y": 307,
+        "w": 340,
+        "z": 53
+      },
+      "/artme/viento/viento-006.jpg": {
+        "x": 63,
+        "y": 560,
+        "w": 340,
+        "z": 56
+      },
+      "/artme/viento/viento-007.jpg": {
+        "x": 64,
+        "y": 813,
+        "w": 340,
+        "z": 60
+      },
+      "/artme/viento/viento-008.jpg": {
+        "x": 68,
+        "y": 1057,
+        "w": 340,
+        "z": 63
+      },
+      "/artme/viento/viento-011.jpg": {
+        "x": 430,
+        "y": 60,
+        "w": 340,
+        "z": 11
+      },
+      "/artme/viento/viento-012.jpg": {
+        "x": 430,
+        "y": 309,
+        "w": 340,
+        "z": 12
+      },
+      "/artme/viento/viento-013.jpg": {
+        "x": 430,
+        "y": 558,
+        "w": 340,
+        "z": 13
+      },
+      "/artme/viento/viento-015.jpg": {
+        "x": 434,
+        "y": 811,
+        "w": 340,
+        "z": 64
+      },
+      "/artme/viento/viento-016.jpg": {
+        "x": 434,
+        "y": 1064,
+        "w": 340,
+        "z": 65
+      },
+      "/artme/viento/viento-020.jpg": {
+        "x": 1139,
+        "y": 1635,
+        "w": 340,
+        "z": 82
+      },
+      "/artme/viento/viento-021.jpg": {
+        "x": 1551,
+        "y": 1060,
+        "w": 340,
+        "z": 98
+      },
+      "/artme/viento/viento-023.jpg": {
+        "x": 1547,
+        "y": 311,
+        "w": 340,
+        "z": 89
+      },
+      "/artme/viento/viento-024.jpg": {
+        "x": 1554,
+        "y": 815,
+        "w": 340,
+        "z": 92
+      },
+      "/artme/viento/viento-025.jpg": {
+        "x": 1555,
+        "y": 568,
+        "w": 340,
+        "z": 90
+      },
+      "/artme/viento/viento-026.jpg": {
+        "x": 1542,
+        "y": 60,
+        "w": 340,
+        "z": 38
+      },
+      "/artme/viento/viento-027.jpg": {
+        "x": 797,
+        "y": 62,
+        "w": 340,
+        "z": 39
+      },
+      "/artme/viento/viento-028.jpg": {
+        "x": 797,
+        "y": 305,
+        "w": 340,
+        "z": 40
+      },
+      "/artme/viento/viento-029.jpg": {
+        "x": 800,
+        "y": 559,
+        "w": 340,
+        "z": 41
+      },
+      "/artme/viento/viento-030.jpg": {
+        "x": 802,
+        "y": 809,
+        "w": 340,
+        "z": 42
+      },
+      "/artme/viento/viento-031.jpg": {
+        "x": 801,
+        "y": 1056,
+        "w": 340,
+        "z": 47
+      },
+      "/artme/viento/viento-032.jpg": {
+        "x": 1170,
+        "y": 60,
+        "w": 340,
+        "z": 32
+      },
+      "/artme/viento/viento-034.jpg": {
+        "x": 1165,
+        "y": 313,
+        "w": 340,
+        "z": 43
+      },
+      "/artme/viento/viento-035.jpg": {
+        "x": 1173,
+        "y": 562,
+        "w": 340,
+        "z": 44
+      },
+      "/artme/viento/viento-036.jpg": {
+        "x": 1176,
+        "y": 815,
+        "w": 340,
+        "z": 45
+      },
+      "/artme/viento/viento-037.jpg": {
+        "x": 1178,
+        "y": 1058,
+        "w": 340,
+        "z": 48
+      }
+    }
+  },
+  "bwc": {
+    "deleted": [
+      "/artme/bwc/bwc-001.jpg",
+      "/artme/bwc/bwc-013.jpg",
+      "/artme/bwc/bwc-018.jpg",
+      "/artme/bwc/bwc-011.jpg",
+      "/artme/bwc/bwc-002.jpg",
+      "/artme/bwc/bwc-008.jpg"
+    ],
+    "items": {
+      "/artme/bwc/bwc-003.jpg": {
+        "x": 68,
+        "y": 64,
+        "w": 240,
+        "z": 29
+      },
+      "/artme/bwc/bwc-004.jpg": {
+        "x": 623,
+        "y": 62,
+        "w": 240,
+        "z": 31
+      },
+      "/artme/bwc/bwc-005.jpg": {
+        "x": 355,
+        "y": 301,
+        "w": 240,
+        "z": 34
+      },
+      "/artme/bwc/bwc-006.jpg": {
+        "x": 68,
+        "y": 296,
+        "w": 240,
+        "z": 36
+      },
+      "/artme/bwc/bwc-007.jpg": {
+        "x": 349,
+        "y": 64,
+        "w": 240,
+        "z": 30
+      },
+      "/artme/bwc/bwc-009.jpg": {
+        "x": 633,
+        "y": 297,
+        "w": 240,
+        "z": 33
+      },
+      "/artme/bwc/bwc-010.jpg": {
+        "x": 80,
+        "y": 562,
+        "w": 240,
+        "z": 39
+      },
+      "/artme/bwc/bwc-012.jpg": {
+        "x": 358,
+        "y": 552,
+        "w": 240,
+        "z": 41
+      },
+      "/artme/bwc/bwc-014.jpg": {
+        "x": 644,
+        "y": 555,
+        "w": 240,
+        "z": 40
+      },
+      "/artme/bwc/bwc-015.jpg": {
+        "x": 347,
+        "y": 826,
+        "w": 240,
+        "z": 46
+      },
+      "/artme/bwc/bwc-016.jpg": {
+        "x": 82,
+        "y": 827,
+        "w": 240,
+        "z": 42
+      },
+      "/artme/bwc/bwc-017.jpg": {
+        "x": 642,
+        "y": 824,
+        "w": 240,
+        "z": 47
+      }
+    }
+  },
+  "callista": {
+    "deleted": [
+      "/artme/callista/exosphere/exosphere-002.jpg",
+      "/artme/callista/earth/earth-001.jpg",
+      "/artme/callista/kosma/kosma-003.jpg",
+      "/artme/callista/exosphere/exosphere-009.jpg",
+      "/artme/callista/kosma/kosma-014.jpg",
+      "/artme/callista/exosphere/exosphere-014.jpg",
+      "/artme/callista/kosma/kosma-016.jpg",
+      "/artme/callista/exosphere/exosphere-027.jpg",
+      "/artme/callista/exosphere/exosphere-034.jpg",
+      "/artme/callista/exosphere/exosphere-036.jpg",
+      "/artme/callista/exosphere/exosphere-004.jpg",
+      "/artme/callista/exosphere/exosphere-021.jpg",
+      "/artme/callista/exosphere/exosphere-029.jpg",
+      "/artme/callista/exosphere/exosphere-026.jpg",
+      "/artme/callista/exosphere/exosphere-017.jpg",
+      "/artme/callista/exosphere/exosphere-008.jpg",
+      "/artme/callista/kosma/kosma-017.jpg",
+      "/artme/callista/kosma/kosma-015.jpg"
+    ],
+    "order": [
+      "/artme/callista/exosphere/exosphere-016.jpg",
+      "/artme/callista/kosma/kosma-001.jpg",
+      "/artme/callista/earth/earth-002.jpg",
+      "/artme/callista/kosma/kosma-004.jpg",
+      "/artme/callista/earth/earth-003.jpg",
+      "/artme/callista/exosphere/exosphere-018.jpg",
+      "/artme/callista/earth/earth-004.jpg",
+      "/artme/callista/exosphere/exosphere-004.jpg",
+      "/artme/callista/kosma/kosma-007.jpg",
+      "/artme/callista/earth/earth-008.jpg",
+      "/artme/callista/exosphere/exosphere-006.jpg",
+      "/artme/callista/kosma/kosma-002.jpg",
+      "/artme/callista/earth/earth-005.jpg",
+      "/artme/callista/kosma/kosma-006.jpg",
+      "/artme/callista/exosphere/exosphere-005.jpg",
+      "/artme/callista/earth/earth-007.jpg",
+      "/artme/callista/kosma/kosma-008.jpg",
+      "/artme/callista/exosphere/exosphere-011.jpg",
+      "/artme/callista/earth/earth-006.jpg",
+      "/artme/callista/kosma/kosma-009.jpg",
+      "/artme/callista/exosphere/exosphere-010.jpg",
+      "/artme/callista/earth/earth-009.jpg",
+      "/artme/callista/kosma/kosma-005.jpg",
+      "/artme/callista/earth/earth-010.jpg",
+      "/artme/callista/exosphere/exosphere-033.jpg",
+      "/artme/callista/kosma/kosma-010.jpg",
+      "/artme/callista/earth/earth-011.jpg",
+      "/artme/callista/exosphere/exosphere-001.jpg",
+      "/artme/callista/kosma/kosma-012.jpg",
+      "/artme/callista/earth/earth-012.jpg",
+      "/artme/callista/exosphere/exosphere-012.jpg",
+      "/artme/callista/kosma/kosma-011.jpg",
+      "/artme/callista/earth/earth-013.jpg",
+      "/artme/callista/kosma/kosma-013.jpg",
+      "/artme/callista/exosphere/exosphere-013.jpg",
+      "/artme/callista/exosphere/exosphere-019.jpg",
+      "/artme/callista/kosma/kosma-015.jpg",
+      "/artme/callista/exosphere/exosphere-024.jpg",
+      "/artme/callista/exosphere/exosphere-023.jpg",
+      "/artme/callista/kosma/kosma-017.jpg",
+      "/artme/callista/exosphere/exosphere-028.jpg",
+      "/artme/callista/exosphere/exosphere-015.jpg",
+      "/artme/callista/exosphere/exosphere-020.jpg",
+      "/artme/callista/exosphere/exosphere-021.jpg",
+      "/artme/callista/exosphere/exosphere-022.jpg",
+      "/artme/callista/exosphere/exosphere-035.jpg",
+      "/artme/callista/exosphere/exosphere-007.jpg",
+      "/artme/callista/exosphere/exosphere-025.jpg",
+      "/artme/callista/exosphere/exosphere-026.jpg",
+      "/artme/callista/exosphere/exosphere-031.jpg",
+      "/artme/callista/exosphere/exosphere-029.jpg",
+      "/artme/callista/exosphere/exosphere-030.jpg",
+      "/artme/callista/exosphere/exosphere-003.jpg",
+      "/artme/callista/exosphere/exosphere-032.jpg",
+      "/artme/callista/exosphere/exosphere-008.jpg",
+      "/artme/callista/exosphere/exosphere-017.jpg",
+      "/artme/callista/earth/earth-001.jpg",
+      "/artme/callista/exosphere/exosphere-002.jpg",
+      "/artme/callista/exosphere/exosphere-009.jpg",
+      "/artme/callista/exosphere/exosphere-014.jpg",
+      "/artme/callista/exosphere/exosphere-027.jpg",
+      "/artme/callista/exosphere/exosphere-034.jpg",
+      "/artme/callista/exosphere/exosphere-036.jpg",
+      "/artme/callista/kosma/kosma-003.jpg",
+      "/artme/callista/kosma/kosma-014.jpg",
+      "/artme/callista/kosma/kosma-016.jpg"
+    ]
+  },
+  "geometrias": {
+    "deleted": [
+      "/artme/geometrias/geometrias-001.jpg",
+      "/artme/geometrias/geometrias-002.jpg",
+      "/artme/geometrias/geometrias-006.jpg",
+      "/artme/geometrias/geometrias-012.jpg",
+      "/artme/geometrias/geometrias-019.jpg",
+      "/artme/geometrias/geometrias-022.jpg",
+      "/artme/geometrias/geometrias-024.jpg"
+    ],
+    "items": {}
+  },
+  "overexposed": {
+    "edits": {
+      "/artme/overexposed/01.jpg": {
+        "ox": -3.58,
+        "oy": 0.06,
+        "zoom": 1.12
+      }
+    }
+  }
+}
