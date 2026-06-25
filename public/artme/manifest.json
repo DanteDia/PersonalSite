@@ -1,0 +1,932 @@
+{
+  "ceramica": [
+    {
+      "src": "/artme/ceramica/ceramica-001.jpg",
+      "w": 1012,
+      "h": 1800,
+      "orig": "C47EB7B5-E93C-4254-B1A4-AA774F7506CD (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-002.jpg",
+      "w": 1012,
+      "h": 1800,
+      "orig": "C47EB7B5-E93C-4254-B1A4-AA774F7506CD.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-003.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0211 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-004.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0211.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-005.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0212 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-006.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0212.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-007.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0213 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-008.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0213.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-009.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0214 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-010.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0214.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-011.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0708 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-012.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0708.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-013.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0709 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-014.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0709.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-015.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0710 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-016.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0710.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-017.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0711 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-018.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0711.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-019.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0712 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-020.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0712.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-021.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0713 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-022.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0713.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-023.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0791 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-024.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0791.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-025.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1040 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-026.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1040.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-027.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1041 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-028.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1041.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-029.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1042 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-030.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1042.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-031.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1043 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-032.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1043.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-033.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1044 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-034.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1044.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-035.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1045 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-036.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1045.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-037.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1046 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-038.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1046.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-039.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1208 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-040.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1208.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-041.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1209 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-042.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1209.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-043.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1210 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-044.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1210.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-045.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1291 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-046.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1291.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-047.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1292 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-048.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1292.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-049.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1381 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-050.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1381.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-051.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1382 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-052.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1382.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-053.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1383 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-054.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1383.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-055.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1384 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-056.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1384.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-057.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1460 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-058.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1460.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-059.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1461 (1).jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-060.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1461.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-061.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1462.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-062.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1463.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-063.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1464.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-064.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1465.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-065.jpg",
+      "w": 960,
+      "h": 1280,
+      "orig": "IMG_1607.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-066.jpg",
+      "w": 960,
+      "h": 1280,
+      "orig": "IMG_1608.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-067.jpg",
+      "w": 960,
+      "h": 1280,
+      "orig": "IMG_1609.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-068.jpg",
+      "w": 960,
+      "h": 1280,
+      "orig": "IMG_1610.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-069.jpg",
+      "w": 960,
+      "h": 1280,
+      "orig": "IMG_1611.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-070.jpg",
+      "w": 960,
+      "h": 1280,
+      "orig": "IMG_1612.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-071.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_2244.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-072.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_2245.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-073.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3081.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-074.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3183.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-075.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3184.jpeg"
+    },
+    {
+      "src": "/artme/ceramica/ceramica-076.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3185.jpeg"
+    }
+  ],
+  "banos": [
+    {
+      "src": "/artme/banos/banos-001.jpg",
+      "w": 750,
+      "h": 1334,
+      "orig": "54A689B1-4D57-4276-8657-937C30168EB5.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-002.jpg",
+      "w": 750,
+      "h": 1334,
+      "orig": "6D805160-0F25-49E1-8C57-CB0D3265D80C.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-003.jpg",
+      "w": 1012,
+      "h": 1800,
+      "orig": "FBB3F260-D2E0-403C-86BE-40515F032D68.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-004.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0202.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-005.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0238.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-006.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0582.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-007.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0615.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-008.jpg",
+      "w": 1800,
+      "h": 1350,
+      "orig": "IMG_0659.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-009.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0665.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-010.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0738.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-011.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0750.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-012.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0775.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-013.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0780.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-014.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_0913.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-015.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1057.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-016.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1058.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-017.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1135.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-018.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1136.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-019.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1137.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-020.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1138.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-021.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1139.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-022.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1140.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-023.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1777.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-024.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1785.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-025.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1786.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-026.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_1916.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-027.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_2060.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-028.jpg",
+      "w": 1012,
+      "h": 1800,
+      "orig": "IMG_2061.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-029.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_2085.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-030.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3302.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-031.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3303.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-032.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3306.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-033.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3307.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-034.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3347.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-035.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3348.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-036.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3473.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-037.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3474.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-038.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3763.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-039.jpg",
+      "w": 1800,
+      "h": 753,
+      "orig": "IMG_3838.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-040.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_3839.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-041.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4283.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-042.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4289.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-043.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4354.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-044.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4365.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-045.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4491.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-046.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4493.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-047.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4525.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-048.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4526.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-049.jpg",
+      "w": 1800,
+      "h": 712,
+      "orig": "IMG_4527.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-050.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_4603.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-051.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_5063.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-052.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_6425.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-053.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_6426.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-054.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_6427.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-055.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_6428.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-056.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_6725.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-057.jpg",
+      "w": 1800,
+      "h": 1350,
+      "orig": "IMG_6726.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-058.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_6890.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-059.jpg",
+      "w": 1800,
+      "h": 1350,
+      "orig": "IMG_7376.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-060.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_7400.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-061.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_7401.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-062.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_7958.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-063.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_8037.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-064.jpg",
+      "w": 1800,
+      "h": 1350,
+      "orig": "IMG_8416.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-065.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_8417.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-066.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_9372.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-067.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_9373.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-068.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_9374.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-069.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_9375.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-070.jpg",
+      "w": 1800,
+      "h": 1350,
+      "orig": "IMG_9376.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-071.jpg",
+      "w": 1800,
+      "h": 1350,
+      "orig": "IMG_9377.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-072.jpg",
+      "w": 1350,
+      "h": 1800,
+      "orig": "IMG_9388.jpeg"
+    },
+    {
+      "src": "/artme/banos/banos-073.jpg",
+      "w": 1280,
+      "h": 957,
+      "orig": "b64f97eb-747f-4b0b-ba28-5d143f27df93.jpeg"
+    }
+  ],
+  "faceid": [
+    {
+      "src": "/artme/faceid/faceid-001.jpg",
+      "w": 832,
+      "h": 1800,
+      "orig": "IMG_5109.jpeg"
+    },
+    {
+      "src": "/artme/faceid/faceid-002.jpg",
+      "w": 750,
+      "h": 1334,
+      "orig": "IMG_7720.jpeg"
+    },
+    {
+      "src": "/artme/faceid/faceid-003.jpg",
+      "w": 750,
+      "h": 1334,
+      "orig": "IMG_7723.jpeg"
+    },
+    {
+      "src": "/artme/faceid/faceid-004.jpg",
+      "w": 750,
+      "h": 1334,
+      "orig": "IMG_7728.jpeg"
+    },
+    {
+      "src": "/artme/faceid/faceid-005.jpg",
+      "w": 750,
+      "h": 1334,
+      "orig": "IMG_7729.jpeg"
+    }
+  ]
+}
