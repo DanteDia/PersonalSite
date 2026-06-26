@@ -71,7 +71,7 @@ export const ROOMS: Room[] = [
   },
   {
     slug: "overexposed", n: "03·II", title: "overexposed", subtitle: "Un cuadro, día a día",
-    blurb: "Un mismo cuadro fotografiado día a día, siempre en el mismo encuadre. Deslizá —o dale play— y velo crecer: del lienzo en blanco a la última capa.",
+    blurb: "",
     type: "proceso",
   },
   {
