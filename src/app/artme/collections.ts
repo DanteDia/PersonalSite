@@ -105,7 +105,7 @@ export const ROOMS: Room[] = [
     type: "images", grid: true,
   },
   {
-    slug: "bwc", n: "10", title: "Black & White & Color", subtitle: "Color selectivo",
+    slug: "bwc", n: "10", title: "B & W & C", subtitle: "Black & White & Color",
     blurb: "La cámara guarda un solo color del cuadro y manda todo el resto a blanco y negro.",
     type: "images",
   },

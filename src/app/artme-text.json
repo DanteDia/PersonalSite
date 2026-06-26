@@ -30,5 +30,10 @@
   "/artme/banos::main:1>div:1>span:1": "Interiores",
   "/artme/spatial-real::main:1>div:1>header:1>p:1": " ",
   "/artme/natural-coof::main:1>div:1>header:1>p:1": "Lo que se revela al moverse.",
-  "/artme/spatial-melty::main:1>div:1>header:1>p:1": "Materia vuelta atmósfera."
+  "/artme/spatial-melty::main:1>div:1>header:1>p:1": "Materia vuelta atmósfera.",
+  "/artme::main:1>div:3>nav:1>div:14>a:1>span:2": "B & W & C",
+  "/artme/bwc::main:1>header:1>h1:1": "B & W & C",
+  "/artme/bwc::main:1>header:1>p:1": "Black & White & Color",
+  "/artme/bwc::main:1>div:1>a:1": "← artme",
+  "/artme::main:1>div:3>nav:1>div:14>a:1>span:3": "Color selectivo"
 }
