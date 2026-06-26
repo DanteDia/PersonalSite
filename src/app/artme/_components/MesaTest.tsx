@@ -8,19 +8,15 @@ const COL: React.CSSProperties = { maxWidth: 1200, margin: "0 auto", padding: "0
 
 const m = (id: string) => `/artme/mesa/mesa-${id}.jpg`;
 
-// order taken from the saved curation layout (mesa de curaduría):
-// materials = grid top→bottom, left→right; process = sorted by left edge (x).
-const MATERIALS = ["006","007","013","009","010","011","012","015","019","014","016","008","021","005","020","024","023","025"].map(m);
-const PROCESS = ["029","033","034","037","038","040","048","051","053","054","026","050","049","003"].map(m);
-const FINISHED = ["finished-1","finished-2","finished-3","finished-4"].map((f) => `/artme/mesa-extra/${f}.jpg`);
-const TARGETS = [...PROCESS, ...FINISHED]; // flip target per material (by index)
+// vertical (phone) layout that imitates the table: 6 cemento arriba (2 filas de 3),
+// 9 madera (3 filas de 3), y las 3 esquinas/terminada en la última fila (izq · centro · der).
+const MATERIALS = ["012","015","019","008","021","005","006","007","013","009","010","011","014","016","020","024","023","025"].map(m);
+// flip target per material (mismo pareo proceso/terminada que antes, reordenado).
+const TARGETS = ["048","051","053","050","049","003","029","033","034","037","038","040","054","026"].map(m)
+  .concat(["finished-1","finished-2","finished-3","finished-4"].map((f) => `/artme/mesa-extra/${f}.jpg`));
 
-// last row is intentionally spaced: 16 · _ · 17 · _ · 18
 type Cell = { kind: "card"; i: number } | { kind: "gap" };
-const CELLS: Cell[] = [
-  ...Array.from({ length: 15 }, (_, i) => ({ kind: "card", i } as Cell)),
-  { kind: "card", i: 15 }, { kind: "gap" }, { kind: "card", i: 16 }, { kind: "gap" }, { kind: "card", i: 17 },
-];
+const CELLS: Cell[] = Array.from({ length: 18 }, (_, i) => ({ kind: "card", i } as Cell));
 
 export default function MesaTest({
   n = "02", title = "Mesa con Papá", subtitle = "Cemento · madera · metal", blurb = "",
