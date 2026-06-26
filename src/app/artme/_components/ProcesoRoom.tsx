@@ -46,7 +46,7 @@ export default function ProcesoRoom({
 
   useEffect(() => {
     if (!playing) return;
-    timer.current = setTimeout(() => setI((x) => { if (x + 1 >= N) { setPlaying(false); return x; } return x + 1; }), 750);
+    timer.current = setTimeout(() => setI((x) => { if (x + 1 >= N) { setPlaying(false); return x; } return x + 1; }), 2250);
     return () => { if (timer.current) clearTimeout(timer.current); };
   }, [playing, i, N]);
 
@@ -115,15 +115,16 @@ export default function ProcesoRoom({
           {shots.map((s, k) => (
             // eslint-disable-next-line @next/next/no-img-element
             <img key={s.src} src={s.src} alt={`día ${k + 1}`} draggable={false}
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: frameTransform(edits[s.src]), opacity: k === i ? 1 : 0, transition: drag.current ? "none" : "opacity 0.45s ease, transform 0.15s ease" }} />
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", transform: frameTransform(edits[s.src]), opacity: k === i ? 1 : 0, transition: drag.current ? "none" : "opacity 1.35s ease, transform 0.15s ease" }} />
           ))}
           {/* tilt guide grid while editing */}
           {editing && (
             <div style={{ position: "absolute", inset: 0, pointerEvents: "none", backgroundImage: "linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px)", backgroundSize: "33.33% 33.33%" }} />
           )}
-          <div style={{ position: "absolute", left: 14, top: 12, fontFamily: MONO, fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "#ece9e2", background: "rgba(13,13,14,0.55)", padding: "0.35rem 0.6rem", borderRadius: 3, backdropFilter: "blur(4px)" }}>día {i + 1} / {N}</div>
-          {!editing && <button onClick={() => go(-1)} aria-label="día anterior" style={arrow("left")}>‹</button>}
-          {!editing && <button onClick={() => go(1)} aria-label="día siguiente" style={arrow("right")}>›</button>}
+          {/* clean appreciation: badge + arrows only show while editing (dev) */}
+          {editing && <div style={{ position: "absolute", left: 14, top: 12, fontFamily: MONO, fontSize: "0.7rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "#ece9e2", background: "rgba(13,13,14,0.55)", padding: "0.35rem 0.6rem", borderRadius: 3, backdropFilter: "blur(4px)" }}>día {i + 1} / {N}</div>}
+          {editing && <button onClick={() => go(-1)} aria-label="día anterior" style={arrow("left")}>‹</button>}
+          {editing && <button onClick={() => go(1)} aria-label="día siguiente" style={arrow("right")}>›</button>}
         </div>
 
         {/* editor panel */}
