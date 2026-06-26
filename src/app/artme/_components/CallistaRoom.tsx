@@ -59,8 +59,8 @@ export default function CallistaRoom({ shots, deleted = [] }: { shots: Shot[]; d
       {/* nav */}
       <nav style={{ position: "sticky", top: 0, zIndex: 50, display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1.1rem clamp(1.2rem,4vw,3rem)", background: "rgba(244,241,236,0.85)", backdropFilter: "blur(10px)", borderBottom: "1px solid rgba(0,0,0,0.07)" }}>
         <Link href="/artme" style={{ fontSize: "0.7rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "#777", textDecoration: "none" }}>← artme</Link>
-        <span style={{ fontSize: "1.05rem", letterSpacing: "0.42em", fontWeight: 300, textTransform: "uppercase", paddingLeft: "0.42em" }}>Callista</span>
-        <div style={{ display: "flex", gap: "1.3rem", fontSize: "0.68rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "#555" }}>
+        <span style={{ fontSize: "clamp(0.9rem,3.2vw,1.05rem)", letterSpacing: "clamp(0.18em,1.4vw,0.42em)", fontWeight: 300, textTransform: "uppercase", paddingLeft: "0.2em", whiteSpace: "nowrap" }}>Callista</span>
+        <div style={{ display: "flex", gap: "clamp(0.45rem,2.4vw,1.3rem)", fontSize: "clamp(0.55rem,2.2vw,0.68rem)", letterSpacing: "0.1em", textTransform: "uppercase", color: "#555", whiteSpace: "nowrap" }}>
           {COLLS.map((c) => <a key={c.key} href={`#${c.key}`} style={{ color: "#555", textDecoration: "none" }}>{c.name}</a>)}
         </div>
       </nav>
@@ -105,7 +105,7 @@ export default function CallistaRoom({ shots, deleted = [] }: { shots: Shot[]; d
               <h2 style={{ fontWeight: 200, fontSize: "clamp(2rem,5vw,3.2rem)", letterSpacing: "0.14em", textTransform: "uppercase", margin: 0 }}>{c.name}</h2>
               <p style={{ maxWidth: "44ch", margin: "1rem auto 0", color: "#555", fontWeight: 300, lineHeight: 1.6, fontSize: "1rem" }}>{c.line}</p>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "clamp(0.6rem,1.5vw,1.4rem)" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(clamp(104px, 30vw, 220px), 1fr))", gap: "clamp(0.4rem,1.5vw,1.4rem)" }}>
               {items.map((s) => (
                 <div key={s.src} style={{ position: "relative" }}>
                   <button onClick={() => onTile(s.src)} style={{ width: "100%", aspectRatio: "1", overflow: "hidden", padding: 0, border: sel === s.src ? "3px solid #1a1a1a" : "none", background: "#fff", cursor: editing ? "pointer" : "zoom-in", boxShadow: "0 1px 3px rgba(0,0,0,0.06)", display: "block" }}>

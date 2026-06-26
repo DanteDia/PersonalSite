@@ -98,8 +98,8 @@ function GridView({ shots, baseIndex, onOpen }: { shots: Shot[]; baseIndex: numb
 }
 
 export default function Gallery({
-  slug, n, title, subtitle, blurb, shots, freeform = false, grid = false, grouped = false, staggerReveal = false,
-}: { slug: string; n: string; title: string; subtitle: string; blurb: string; shots: Shot[]; freeform?: boolean; grid?: boolean; grouped?: boolean; staggerReveal?: boolean }) {
+  slug, n, title, subtitle, blurb, shots, freeform = false, grid = false, grouped = false, staggerReveal = false, bg,
+}: { slug: string; n: string; title: string; subtitle: string; blurb: string; shots: Shot[]; freeform?: boolean; grid?: boolean; grouped?: boolean; staggerReveal?: boolean; bg?: string }) {
   const layout = useMemo(() => getLayout(slug), [slug]);
   const deleted = useMemo(() => new Set(layout.deleted ?? []), [layout]);
   const visible = useMemo(() => shots.filter((s) => !deleted.has(s.src)), [shots, deleted]);
@@ -120,6 +120,14 @@ export default function Gallery({
     return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
   }, [open, close, go]);
 
+  // match the whole page background to a piece (e.g. Momento's eclipse black)
+  useEffect(() => {
+    if (!bg) return;
+    const prevBody = document.body.style.background, prevHtml = document.documentElement.style.background;
+    document.body.style.background = bg; document.documentElement.style.background = bg;
+    return () => { document.body.style.background = prevBody; document.documentElement.style.background = prevHtml; };
+  }, [bg]);
+
   const tab = (active: boolean): React.CSSProperties => ({
     fontFamily: MONO, fontSize: "0.72rem", letterSpacing: "0.12em", textTransform: "uppercase",
     background: "none", border: "none", cursor: "pointer", padding: "0.2rem 0",
@@ -137,7 +145,7 @@ export default function Gallery({
   };
 
   return (
-    <main style={{ maxWidth: 1500, margin: "0 auto", padding: "clamp(2rem,5vw,4rem) clamp(1rem,4vw,3rem) 6rem" }}>
+    <main style={{ maxWidth: 1500, margin: "0 auto", padding: "clamp(2rem,5vw,4rem) clamp(1rem,4vw,3rem) 6rem", background: bg, minHeight: bg ? "100vh" : undefined }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontFamily: MONO, fontSize: "0.72rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "#8a857c" }}>
         <Link href="/artme" style={{ color: "#8a857c", textDecoration: "none" }}>← artme</Link>
         <span>{subtitle}</span>

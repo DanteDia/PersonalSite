@@ -22,6 +22,7 @@ export type Room = {
   brushToggle?: boolean; // show the burbujas/pinceladas render toggle (default true)
   freeformGallery?: boolean; // gallery renders the curated mesa arrangement as-is
   staggerReveal?: boolean; // reveal one row every 2s (77 km/h)
+  bg?: string; // override page background (e.g. match a photo's black)
   grid?: boolean; // uniform square grid (aligned, no gaps)
   grouped?: boolean; // group the grid by collection (uses each shot's `coll`)
   hidden?: boolean; // not shown in the entrance; reachable only by URL (easter egg)
@@ -82,7 +83,7 @@ export const ROOMS: Room[] = [
   {
     slug: "momento-obscuro", n: "05", title: "Momento Obscuro", subtitle: "Rojo · sombra · deseo",
     blurb: "Oscuridad, rojos, sensualidad, sombras.",
-    type: "images",
+    type: "images", bg: "#050505",
   },
   {
     slug: "faceid", n: "06", title: "Face ID", subtitle: "Verificación facial",

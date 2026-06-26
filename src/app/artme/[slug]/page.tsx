@@ -68,5 +68,5 @@ export default async function RoomPage({ params }: { params: Promise<{ slug: str
   }
 
   const shots = MANIFEST[slug] ?? [];
-  return <Gallery slug={slug} n={r.n} title={r.title} subtitle={r.subtitle} blurb={r.blurb} shots={shots} freeform={r.freeformGallery} grid={r.grid} grouped={r.grouped} staggerReveal={r.staggerReveal} />;
+  return <Gallery slug={slug} n={r.n} title={r.title} subtitle={r.subtitle} blurb={r.blurb} shots={shots} freeform={r.freeformGallery} grid={r.grid} grouped={r.grouped} staggerReveal={r.staggerReveal} bg={r.bg} />;
 }

@@ -46,9 +46,12 @@ export default function ProcesoRoom({
 
   useEffect(() => {
     if (!playing) return;
-    timer.current = setTimeout(() => setI((x) => { if (x + 1 >= N) { setPlaying(false); return x; } return x + 1; }), 2250);
+    timer.current = setTimeout(() => setI((x) => (x + 1) % N), 2250); // loop continuo
     return () => { if (timer.current) clearTimeout(timer.current); };
   }, [playing, i, N]);
+
+  // arranca solo al entrar; pausa mientras se edita (dev)
+  useEffect(() => { setPlaying(!editing); }, [editing]);
 
   const play = () => { if (i >= N - 1) setI(0); setPlaying((p) => !p); };
 
@@ -146,36 +149,26 @@ export default function ProcesoRoom({
           </div>
         )}
 
-        {/* playback controls */}
-        <div style={{ width: "min(78vh, 100%)", margin: "1.4rem auto 0", display: "flex", alignItems: "center", gap: "1rem" }}>
-          <button onClick={play} disabled={editing} style={{ flexShrink: 0, fontFamily: MONO, fontSize: "0.68rem", letterSpacing: "0.14em", textTransform: "uppercase", color: "#ece9e2", background: editing ? "rgba(80,80,80,0.4)" : "rgba(155,29,29,0.85)", border: "none", borderRadius: 4, padding: "0.6rem 1rem", cursor: editing ? "default" : "pointer", minWidth: 110 }}>
-            {playing ? "❚❚ pausa" : "▶ time-lapse"}
-          </button>
-          <input type="range" min={0} max={N - 1} value={i} onChange={(e) => { setPlaying(false); setI(Number(e.target.value)); }} style={{ flex: 1, accentColor: "#9b1d1d", cursor: "pointer" }} />
-          {DEV && (
-            <button data-noedit onClick={() => { setEditing((e) => !e); setPlaying(false); }} style={{ flexShrink: 0, fontFamily: MONO, fontSize: "0.66rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#ece9e2", background: editing ? "#9b1d1d" : "transparent", border: "1px solid rgba(236,233,226,0.3)", borderRadius: 4, padding: "0.55rem 0.8rem", cursor: "pointer" }}>
+        {/* dev-only editor toggle (no playback UI for visitors) */}
+        {DEV && (
+          <div style={{ width: "min(78vh, 100%)", margin: "1.2rem auto 0", display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem" }}>
+            <button data-noedit onClick={() => setEditing((e) => !e)} style={{ fontFamily: MONO, fontSize: "0.66rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#ece9e2", background: editing ? "#9b1d1d" : "transparent", border: "1px solid rgba(236,233,226,0.3)", borderRadius: 4, padding: "0.55rem 0.8rem", cursor: "pointer" }}>
               {editing ? "✓ listo" : "✎ ajustar"}
             </button>
-          )}
-          {DEV && editing && (
-            <button data-noedit onClick={save} style={{ flexShrink: 0, fontFamily: MONO, fontSize: "0.66rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#fff", background: "#9b1d1d", border: "none", borderRadius: 4, padding: "0.55rem 0.8rem", cursor: "pointer" }}>{saveMsg || "guardar"}</button>
-          )}
-        </div>
+            {editing && <button data-noedit onClick={save} style={{ fontFamily: MONO, fontSize: "0.66rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#fff", background: "#9b1d1d", border: "none", borderRadius: 4, padding: "0.55rem 0.8rem", cursor: "pointer" }}>{saveMsg || "guardar"}</button>}
+          </div>
+        )}
 
         {/* filmstrip */}
         <div style={{ width: "min(78vh, 100%)", margin: "1.2rem auto 0", display: "grid", gridTemplateColumns: `repeat(${N}, 1fr)`, gap: 6 }}>
           {shots.map((s, k) => (
-            <button key={s.src} onClick={() => { setPlaying(false); setI(k); }} aria-label={`día ${k + 1}`}
+            <button key={s.src} onClick={() => setI(k)} aria-label={`día ${k + 1}`}
               style={{ position: "relative", aspectRatio: "1", padding: 0, border: k === i ? "2px solid #9b1d1d" : "1px solid rgba(236,233,226,0.15)", borderRadius: 2, overflow: "hidden", cursor: "pointer", background: "#0d0d0e", opacity: k === i ? 1 : 0.55, transition: "opacity 0.2s" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={s.src} alt="" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transform: frameTransform(edits[s.src]) }} />
             </button>
           ))}
         </div>
-
-        <p style={{ fontFamily: MONO, fontSize: "0.66rem", color: "#5f5b53", textAlign: "center", marginTop: "1.4rem", letterSpacing: "0.08em" }}>
-          deslizá o dale play · ← → para moverte día a día
-        </p>
       </div>
     </main>
   );
